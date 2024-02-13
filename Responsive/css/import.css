@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;500&display=swap');
+/* 폰트 들어가서 폰트css만들 수 있음 */
+
+@import url('reset.css');
+@import url('global.css');
+
+/* 폰트는 제제제일 위에 폰트를 먼저 렌더된 후 사이트 나올 수 있게 */
+/* 리셋이 제일 위에 있어야 돼 / import 순서가 중요해 !
+reset -> 외부 장치 -> 내가 작성 안 하는 css -> 내가 작성하는 css(가장 밑) */

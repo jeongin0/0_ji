@@ -1,0 +1,119 @@
+/* body{
+    margin: 0; padding: 0;
+    min-width: 750px;
+}
+aside{
+    width: 40%; text-align: left;
+    padding-left: 50px;
+}
+aside:first-child{
+    padding-top: 200px;
+}
+aside>p,
+footer{
+    font-size: 16px; line-height: 22px;
+}
+aside:last-child{
+    width: 40%;
+}
+aside ul{
+    list-style: none;
+}
+aside ul li{
+    font-size: 16px; line-height: 22px;
+    padding: 40px 30px 60px; text-align: right;
+    position: relative;
+    transition-duration: 2s;
+}
+aside ul li:nth-child(1){background-color: red; width: 100%; }
+aside ul li:nth-child(2){background-color: orange; width: 100%;}
+aside ul li:nth-child(3){background-color: yellow; width: 100%;}
+aside ul li:nth-child(4){background-color: green; width: 100%;}
+aside ul li:nth-child(5){background-color: blue; width: 100%;}
+aside ul li:nth-child(6){background-color: navy; width: 100%;}
+aside ul li:nth-child(7){background-color: purple; width: 100%;}
+
+aside ul li a{
+    font-size: 18px; line-height: 24px;
+    display: block;
+    text-decoration: none;
+    color: white; 
+    position: absolute; right: 30px; top: 20px;
+}
+aside ul li a:hover{
+    color: black;
+    transition-duration: 2s;
+} */
+
+/* 풀이 */
+html,body{
+    height: 100%;
+}
+body{
+    width: 90%; margin: 0 auto;
+}
+aside{
+    height: 80%; float: left; padding-top: 14%;
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-size: 12px;
+}
+p strong{
+    display: block;
+    /* 줄바꿈 일어남 */
+}
+/* ? global.css */
+
+aside:first-of-type{
+    width: 50%;
+}
+aside:first-of-type footer{
+    color: #6800ff;
+}
+/* ?leftAside Fin */
+
+aside:last-of-type{
+    margin-left: 5%; width: 45%;
+}
+aside:last-of-type ul{
+    margin: 0; padding: 0;
+}
+aside:last-of-type ul li{
+    display: block; text-align: right; padding: 10px 5%; 
+    overflow-y: hidden;
+    transition-duration: 1s;
+}
+aside:last-of-type ul li:nth-child(1){background-color: #ff5f5f;}
+aside:last-of-type ul li:nth-child(2){background-color: #ffaf6b;}
+aside:last-of-type ul li:nth-child(3){background-color: #e7ed66;}
+aside:last-of-type ul li:nth-child(4){background-color: #30b052;}
+aside:last-of-type ul li:nth-child(5){background-color: #7c8aff;}
+aside:last-of-type ul li:nth-child(6){background-color: #3a5fb7;}
+aside:last-of-type ul li:nth-child(7){background-color: #6800ff;}
+
+aside:last-of-type ul li:hover{
+    padding: 5%; cursor: pointer;
+}
+aside:last-of-type ul li p{
+    width: 80%; float: left; height: 0px; opacity: 0;
+    transition-property: height, opacity;
+    transition-duration: 2s, 1s;
+}
+aside:last-of-type ul li:hover p{
+    height: 220px; opacity: 1;
+}
+aside:last-of-type ul li a{
+    color: #fff; font-size: 12px;
+}
+aside:last-of-type ul li:hover a{
+    color: #000;
+}
+aside:last-of-type ul li a:before{
+    content: '+';
+}
+aside:last-of-type ul li:hover a:before{
+    content: '>';
+}

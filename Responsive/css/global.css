@@ -1,0 +1,71 @@
+/* 화면상 반응형 */
+@media screen and (max-width: 767px) and (orientation: landscape){
+    body{
+        font-family: 'Roboto';
+        background-color: purple; color: forestgreen;
+    }
+    h1{
+        font-size: 28px; line-height: 30px; font-weight: 500;
+    }
+    p{
+        font-size: 14px; line-height: 20px; font-weight: 300;
+    }
+}
+/* moblie - 사용자 해상도가 768미만일 때 */
+@media screen and (max-width: 767px) and (orientation: portrait){
+    body{
+        font-family: 'Roboto'; background-color: magenta; text-align: center;
+    }
+    h1{
+        font-size: 24px; line-height: 30px; font-weight: 500;  color: brown;
+        margin-bottom: 30px;
+    }
+    p{
+        font-size: 12px; line-height: 18px; font-weight: 300; color: black;
+        margin-bottom: 15px;
+    }
+}
+@media screen and (min-width:768px) and (max-width: 1279px) and (orientation: landscape){
+    body{
+        font-family: 'Roboto';
+        background-color: red; color: forestgreen;
+    }
+    h1{
+        font-size: 30px; line-height: 42px; font-weight: 300;
+    }
+    p{
+        font-size: 16px; line-height: 22px; font-weight: 500;
+    }
+}
+/* tablet - 사용자 해상도가 768 이상 1280미만일 때 */
+@media screen and (min-width:768px) and (max-width: 1279px) and (orientation: protrait){
+    body{
+        font-family: 'Roboto';
+        background-color: palegoldenrod; color: forestgreen;
+    }
+    h1{
+        font-size: 28px; line-height: 30px; font-weight: 300;
+    }
+    p{
+        font-size: 14px; line-height: 20px; font-weight: 500;
+    }
+}
+/* -> 1280픽셀 이상인 기기는 다 출력될거임
+screen(모든 빛으로 출력되는 장치)장치 분류를 한 거야 / and 조건은 붙이는거 /
+(print 라고 쓰면 프린터용 css로 적용하겠다는거야)*/
+/* tablet - 사용자 해상도가 768 이상 1280미만일 때 */
+@media screen and (min-width:1280px){
+    body{
+        font-family: 'Playfair Display';
+        background-color: blue; color: white;
+    }
+    h1{
+        font-size: 32px; line-height: 30px; font-weight: 700;
+    }
+    p{
+        font-size: 16px; line-height: 22px; font-weight: 400;
+    }
+}
+/* desktop - 사용자 해상도가 1280이상일 때 */
+
+/* 이 세개 media는 세트로 가꼬다님 */

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice2</title>
+    <!-- <style>
+        td{
+            border: 1px solid black;
+        }
+    </style> -->
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>회원등록</legend>
+                <table>
+                    <caption>회원가입 서식 작성</caption>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <th>
+                                        <label for="userName">*이름</label>
+                                    </th>
+                                </td>
+                                <td>
+                                    <input type="text" id="userName" autofocus>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <th>
+                                        <label for="userImg">*사진</label>
+                                    </th>
+                                </td>
+                                <td>
+                                    <input type="file" id="userImg" title="가로 3cm X 세로 4cm 사진">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <th>
+                                        <label for="userID">*아이디</label>
+                                    </th>
+                                </td>
+                                <td>
+                                    <input type="text" id="userID" placeholder="아이디는 8글자 이상">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <th>
+                                        <label for="userPW">*비밀번호</label>
+                                    </th>
+                                </td>
+                                <td>
+                                    <input type="password" id="userPW" placeholder="대소문자, 숫자, 특수문자">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <th>
+                                        <label for="userPW1">*비밀번호확인</label>
+                                    </th>
+                                </td>
+                                <td>
+                                    <input type="password" id="userPW1">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <th>
+                                        <label for="userEmail">이메일</label>
+                                    </th>
+                                </td>
+                                <td>
+                                    <input type="email" id="userEmail" placeholder="@를 포함한 주소 입력">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <th>
+                                        <label for="userBirth">*생년월일</label>
+                                    </th>
+                                </td>
+                                <td>
+                                    <input type="datetime-local" id="userBirth">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <th>
+                                        <label for="userCall">*연락처</label>
+                                    </th>
+                                </td>
+                                <td>
+                                    <input type="tel" id="userCall">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <th>
+                                        <label for="userAddr">*주소</label>
+                                    </th>    
+                                </td>
+                                <td>
+                                    <label for="userAddr1"> 우편번호 : </label>
+                                    <input type="text" id="userAddr1">
+                                    <input type="button" value="우편번호 찾기"> <br>
+                                    <label for="userAddr2"> 도로명주소 : </label>
+                                    <input type="text" id="userAddr2"> <br>
+                                    <label for="userAddr3"> 상세주소 : </label>
+                                    <input type="text" id="userAddr3">
+                                </td>
+                                <!-- rowspand을 써야되나, 병합은 숫자만 가능한가  -->
+                            </tr>
+                            <tr>
+                                <td>
+                                    <th>
+                                        <label for="userSub">가입경로</label>
+                                    </th>
+                                </td>
+                                <td>
+                                    <select>
+                                        <option value="p1">가족</option>
+                                        <option value="p2">지인</option>
+                                        <option value="p3">SNS</option>
+                                        <option value="p4">전단지</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <th>
+                                        <label for="userHobby">취미</label>
+                                    </th>
+                                </td>
+                                <td>
+                                    <input type="checkbox" id="userchk1">
+                                    <label for="userchk1">공부</label>
+                                    <input type="checkbox" id="userchk2">
+                                    <label for="userchk2">운동</label>
+                                    <input type="checkbox" id="userchk3">
+                                    <label for="userchk3">독서</label>
+                                    <input type="checkbox" id="userchk4">
+                                    <label for="userchk4">기타</label>
+                                    <!-- 세로로 나타나게 할 순 없는지 -->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                <input type="submit" value="전송">
+                <input type="reset" value="취소">
+            </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>프로그램 스킬표</legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                        <ul>
+                            <li> 
+                            <label for="mypsd">Photoshop</label>
+                            <meter value="75" max="100" min="0"></meter> 75%
+                            </li>
+                        </ul>    
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <ul>
+                            <li>    
+                            <label for="myai">Illustrator</label>
+                            <meter value="70" max="100" min="0"></meter> 70%
+                            </li>
+                        </ul>    
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>
+                                    <label for="mycad">CAD</label>
+                                    <meter value="90" max="100" min="0"></meter> 90%
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>
+                                    <label for="myskt">SketchUp</label>
+                                    <meter value="80" max="100" min="0"></meter> 80%
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <ul>
+                            <li>
+                            <a href="https://www.instagram.com/ko_ddagji/" target="_blank"> 정인 Instagram 바로가기</a>
+                            </li>
+                        </ul>        
+                        </td>
+                    </tr>
+                    <!-- <ul>
+                        <li>
+                            <figure>
+                                <img src="../STEP2/images/나.jpg" alt="내 사진">
+                            </figure>
+                        </li>
+                    </ul> -->
+                </tbody>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

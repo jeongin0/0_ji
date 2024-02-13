@@ -1,0 +1,104 @@
+/* ? 변수선언 */
+
+/* ↓전역변수 광범위하게 전체적으로 들어감 */
+/* @ColumnWidth: 6.5%;
+@GutterWidth: 2%; */
+
+/* ? MixIn */
+
+/* ↓매개변수 바깥쪽에선 못써 클라스가 가지고있는 애라서 매개체로 쓰임 */
+/* .span(@column){
+    width: (@ColumnWidth * @column) + (@GutterWidth * (@column - 1));
+} */
+/* 
+변수는 운반의 개념이 강함 
+클래스에 괄호가 생기면 함수가 됨 함수가 되면 변수를 씀 매개변수가 됨
+(); -> 함수 실행식
+함수를 만드는 이유는 자동화임
+*/
+
+/* use STYLE */
+/* .container{
+    margin: 0; padding: 0;
+}
+.row{
+    overflow: hidden; width: 100%;
+}
+[class*='span']{
+    float: left;
+    margin-left: @GutterWidth;
+    &:first-child{
+        margin-left: 0;
+    & = 상위 [class*='span'] 를 잡아줌 
+    한 번 더 & 쓰면 & 기준 상위 클래스 잡음
+    }
+} */
+/* .span_12{.span(12);}
+.span_11{.span(11);}
+.span_10{.span(10);}
+.span_9{.span(9);}
+.span_8{.span(8);}
+.span_7{.span(7);}
+.span_6{.span(6);}
+.span_5{.span(5);}
+.span_4{.span(4);}
+.span_3{.span(3);}
+.span_2{.span(2);}
+.span_1{.span(1);} */
+
+/* 정규식으로 컴파일이 바꿔줬음 */
+.container {
+    margin: 0;
+    padding: 0;
+  }
+  .row {
+    overflow: hidden;
+    width: 100%;
+  }
+  [class*='span'] {
+    float: left;
+    margin-left: 2%;
+  }
+  [class*='span']:first-child {
+    margin-left: 0;
+  }
+  .span_12 {
+    width: 100%;
+  }
+  .span_11 {
+    width: 91.5%;
+  }
+  .span_10 {
+    width: 83%;
+  }
+  .span_9 {
+    width: 74.5%;
+  }
+  .span_8 {
+    width: 66%;
+  }
+  .span_7 {
+    width: 57.5%;
+  }
+  .span_6 {
+    width: 49%;
+  }
+  .span_5 {
+    width: 40.5%;
+  }
+  .span_4 {
+    width: 32%;
+  }
+  .span_3 {
+    width: 23.5%;
+  }
+  .span_2 {
+    width: 15%;
+  }
+  .span_1 {
+    width: 6.5%;
+  }
+
+
+
+

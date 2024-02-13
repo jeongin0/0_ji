@@ -1,0 +1,38 @@
+body{
+    width: 200px; margin: 200px auto;
+    perspective: 300px;
+    /* perspective : 원근 / 가운데 점을 찍고 가운데 점을 수치를 줘서 공간 자체의 입체감을 설정함 */
+}
+/* 이런 건 그냥 가운데에 두려고 하는 거임 / 만약 도형이 들어가는거면 특정 공간에 만들겠지 바디에 안 넣고/ 
+위 코드에 너무 신경쓰지 않기 */
+div{
+    width: 200px; height: 200px;
+    position: relative;
+    animation-name: playBox;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    transform-style: preserve-3d;
+}
+@keyframes playBox {
+    0%{
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }100%{
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
+/* 각각의 축을 기준으로 따로 돌게끔 / 
+동시에 움직이는게 아니라 엑스 움직이고 와이 움직이고 제트 움직이고 하는 거임 */
+div span{
+    width: 200px; height: 200px;
+    position: absolute; left: 0; top: 0; opacity: 0.5;
+    backface-visibility: visible;
+    /* backface-visibility 이면가시성 -> 이면 : 뒷면 / 안이 보인다 / 입체방사형도형일 땐 비졀리티를 쓰는게 좋아
+    뒤로 넘어갈 때 잘라버릴 수 있는 속성 */
+}
+div span:nth-of-type(1){background-color: red; transform: translateZ(100px);}
+div span:nth-of-type(2){background-color: green; transform: rotateY(90deg) translateZ(100px);}
+div span:nth-of-type(3){background-color: blue; transform: rotateY(180deg) translateZ(100px);}
+div span:nth-of-type(4){background-color: yellow; transform: rotateY(270deg) translateZ(100px);}
+div span:nth-of-type(5){background-color: brown; transform: rotateX(90deg) translateZ(100px);}
+div span:nth-of-type(6){background-color: pink; transform: rotateX(270deg) translateZ(100px);}

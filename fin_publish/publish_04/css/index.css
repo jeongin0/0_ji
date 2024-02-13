@@ -1,0 +1,50 @@
+*{
+    margin: 0; padding: 0;
+}
+
+.header, .div{
+    background-color: darkgray;
+}
+.contactSection form fieldset ol{
+    list-style: none;
+}
+.contactSection form fieldset  ol li{
+    display: block;
+    margin: 43px;
+}
+.radiusBox{
+    width: 540px; height: 555px;
+    border-radius: 25px;
+    background-color: white;
+    text-align: center;
+    font-size: 14px;
+    border-width: 0px;
+}
+
+.radiusBox ol li *{
+    display: block;
+}
+.backImg1{
+    width: 1440px; height: 810px;
+    /* width: 100%; */
+    background-image: url('../images/Template-3_15.png');
+    background-position: left 770px;
+    background-repeat: no-repeat;
+}
+.backImg small{
+    display: block;
+    /* border: 1px solid black; */
+    font-size: 15px;
+    margin-top: 100px;
+}
+.backImg1 h2{
+    font-size: 60px;
+    line-height: 50px;
+    margin-top: 300px;
+    text-align: center;
+}
+.backImg1 p{
+    font-size: 15px;
+    margin-top: 30px;
+    text-align: center;
+}

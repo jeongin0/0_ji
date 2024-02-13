@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>필수입력사항</legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            아이디
+                        </td>
+                        <td>
+                            <label for="useID"></label>
+                            <input type="useID">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>비밀번호</td>
+                        <td>
+                            <label for="password"></label>
+                            <input type="password" tittle="비밀번호">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>비밀번호확인</td>
+                        <td>
+                            <label for="password"></label>
+                            <input type="password" title="비밀번호확인">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>이름</td>
+                        <td>
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>이메일</td>
+                        <td>
+                            <input type="email"> @
+                            <select>
+                                <option value="default">naver</option>
+                                <option value="d1">daum</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>선택입력사항</legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>주소</td>
+                        <td>
+                            <input type="text">
+                            <button>주소찾기</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>연락처</td>
+                        <td>
+                            <input type="tel">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>성별</td>
+                        <td>
+                            <input type="radio" name="radioGroup" id="btn_radio1">
+                            <label for="btn_radio1">남자</label>
+                            <input type="radio" name="radioGroup" id="btn_radio2">
+                            <label for="btn_radio2">여자</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>취미</td>
+                        <td>
+                            <input type="checkbox" id="btn_chk1">
+                            <label for="btn_chk1">독서</label>
+                            <input type="checkbox" id="btn_chk2">
+                            <label for="btn_chk2">게임</label>
+                            <input type="checkbox" id="btu_chk3">
+                            <label for="btn_chk3">영화</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>생년월일시</td>
+                        <td>
+                            <input type="datetime-local">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>좋아하는 색상</td>
+                        <td>
+                            <label for="colorPick"></label>
+                            <input type="color" id="colorPick">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>키</td>
+                        <td>
+                            <input type="range">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>SNS</td>
+                        <td>
+                            <input type="url">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>가입인사</td>
+                        <td>
+                            <textarea cols="30" rows="10"></textarea>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <input type="submit" value="확인">
+        <input type="reset" value="취소">
+    </form>
+</body>
+</html>

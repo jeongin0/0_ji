@@ -1,0 +1,207 @@
+
+a{
+    text-decoration: none;
+}
+a.btn_more{
+    border: 1px solid #00e0d0; line-height: 40px; color: #00e0d0;
+    font-size: 16px; font-weight: 400; display: block; margin: 0 auto;
+    text-align: center;
+}
+
+
+@media screen and (min-width:1280px){
+    #about,
+    .expArea,
+    .worksArea,
+    .talkArea,
+    .contactArea,
+    .teamArea div{
+        padding: 70px 0;
+    }
+
+
+    header div,
+    #about,
+    .expArea,
+    .teamArea div,
+    .contactArea,
+    footer>div{
+        max-width: 940px; margin: 0 auto;
+    }
+    
+    
+    header{
+        background: url('../images/bg_01.png.png') left top / cover no-repeat;
+        padding: 15px 0 70px;
+    }
+    header div{
+        max-width: 940px; margin: 0 auto; position: relative;
+    }
+    header div h1{
+        max-width: 128px; padding-bottom: 180px;
+    }
+    header div h1 a{
+        display: block;
+    }
+    header div h1 a img{
+        width: 100%;
+    }
+    header div nav>ul{
+        list-style: none; text-align: right;
+        position: absolute; right: 0; top: 20px;
+    }
+    header div nav>ul li{
+        display: inline-block; font-size: 13px; font-weight: 900;
+        line-height: 20px;
+    }
+    header div nav>ul li:not(:last-child){
+        margin-right: 20px;
+    }
+    header div nav>ul li a{
+        color: white;
+    }
+    header div nav>ul li a:hover,
+    header div nav>ul li a.active{
+        color: #00e0d0;
+    }
+    header div>ul{
+        list-style: none;
+    }
+    header div>ul li{
+        text-align: center;
+
+    }
+    header div ul li h2{
+        font-size: 32px; font-weight: 900; color: white;
+        padding-bottom: 50px;        
+    }
+    header div ul li p{
+        width: 81.25%; margin: 0 auto 50px; font-size: 14px; 
+        line-height: 24px; font-weight: 300; color: white;
+    }
+    header div ul li a.btn_more{
+        max-width: 120px; margin-bottom: 125px;
+    }
+    header div ol{
+        list-style: none; text-align: center;
+    }
+    header div ol li{
+        display: inline-block;        
+
+    }
+    header div ol li a{
+        display: block; text-indent: -9999px;        
+        border: 1px solid #aba9b0; width: 10px; height: 10px;
+        border-radius: 5px;
+    }
+    header div ol li a:hover,
+    header div ol li a.active{
+        border-color: #00e0d0; background-color: #00e0d0;
+    }
+
+    footer{
+        background: url('../images/bg_5.png.png') left top / cover no-repeat;
+    }
+    footer>div{
+        padding: 70px 0 0;
+    }
+    footer>div div:not(:last-of-type){
+        float: left; width: 32%; margin: 0 0 70px 1%;
+    }
+    footer>div div:first-of-type h2{
+        max-width: 128px; margin: 0 0 20px;
+    }
+    footer>div div:first-of-type img{
+        width: 100%;
+    }
+    footer>div div:first-of-type p{
+        font-size: 14px; font-weight: 300; color: white; line-height: 25px;
+    }
+    footer>div div:nth-of-type(2) h2,
+    footer>div div:nth-of-type(3) h2{
+        font-size: 14px; font-weight: 900; margin: 0 0 22px; 
+        line-height: 50px; color: white;
+    }
+    footer>div div:nth-of-type(2) address{
+        font-style: normal;
+    }
+    footer>div div:nth-of-type(2) address span{
+        display: block; font-size: 14px; font-size: 400; 
+        line-height: 26px; color: white; max-width: 85%; padding: 0 0 0 10%;
+        background-repeat: no-repeat;
+        background-position: left 5%;
+    }
+    footer>div div:nth-of-type(2) address span:first-child{
+        background-image: url('../images/bul_map.png');
+        margin-bottom: 10px;
+    }
+    footer>div div:nth-of-type(2) address span:last-child{
+        background-image: url('../images/bul_phone.png');
+    }
+    footer>div div:nth-of-type(2) address span a{
+        display: block; color: white;
+    }
+    footer>div div:nth-of-type(3) form input{
+        box-sizing: border-box; line-height: 43px; margin: 0 0 27px;
+    }
+    footer>div div:nth-of-type(3) form input[type='email']{
+        background-color: transparent; width: 70%;  
+        border: 1px solid rgba(255, 255, 255, 0.5); 
+    }
+    footer>div div:nth-of-type(3) form input[type='email']::placeholder{
+        font-size: 14px; font-weight: 400; color: rgba(255, 255, 255, 0.75);
+        padding: 0 0 0 15px;
+    }
+    footer>div div:nth-of-type(3) form input[type='submit']{
+        width: 28%; text-indent: -9999px;
+        background-image: url('../images/but_submit.png');
+        background-position: center; background-repeat: no-repeat;
+        background-color: rgba(255, 255, 255, 0.5);
+        border: none;
+    }
+    footer>div div:nth-of-type(3) ul{
+        list-style: none;
+    }
+    footer>div div:nth-of-type(3) ul li{
+        display: inline-block; width: 35px; line-height: 35px;
+    }
+    footer>div div:nth-of-type(3) ul li:not(:first-child){
+        margin-left: 5px;
+    }
+    footer>div div:nth-of-type(3) ul li:nth-of-type(1){
+        background-image: url('../images/ico_sns_01.png.png');
+    }
+    footer>div div:nth-of-type(3) ul li:nth-of-type(2){
+        background-image: url('../images/ico_sns_02.png');
+    }
+    footer>div div:nth-of-type(3) ul li:nth-of-type(3){
+        background-image: url('../images/ico_sns_03.png.png');
+    }
+    footer>div div:nth-of-type(3) ul li:nth-of-type(4){
+        background-image: url('../images/ico_sns_04.png.png');
+    }
+    footer>div div:nth-of-type(3) ul li:nth-of-type(5){
+        background-image: url('../images/ico_sns_05.png');
+    }
+    footer>div div:nth-of-type(3) ul li:nth-of-type(6){
+        background-image: url('../images/ico_sns_06.png.png');
+    }
+    footer>div div:nth-of-type(3) ul li a{
+        display: block; text-indent: -9999px; 
+        background-repeat: no-repeat; background-size: contain;
+    }
+    footer > div div:last-of-type{
+        clear: both; padding: 0 0 70px;
+         color: white; font-weight: 400; font-size: 14px; line-height: 26px;
+    }
+    footer > div div:last-of-type a{
+        display: block; float: left; color: white; font-weight: 400; font-size: 14px;
+        line-height: 26px;
+    }
+    footer > div div:last-of-type a:not(:first-of-type){
+        margin-left: 30px;
+    }
+    footer > div div:last-of-type p{
+        text-align: right; 
+    }
+}

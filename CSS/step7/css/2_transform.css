@@ -1,0 +1,36 @@
+div{
+    width: 200px; height: 200px;
+    border: 5px solid black;
+    margin: 0 auto;
+}
+div span{
+    width: 200px; height: 200px; display: block;
+    transform-origin: left top;
+}
+div:first-of-type span{
+    background-color: red; transform: rotate(10deg);
+}
+div:nth-of-type(2) span{
+    background-color: green; color: white;
+    transform:  translateX(100px) rotate(10deg);
+    /* 하나씩밖에 처리를 못해서 !순서!가 제일 중요함! */
+}
+div:nth-of-type(3) span{
+    background-color: blue; color: white;
+    transform: translate(100px,50px) rotate(10deg) ;
+}
+div:nth-of-type(4) span{
+    background-color: brown; color: white;
+    transform: translate(100px,50px) rotate(10deg) skewX(10deg);
+}
+div:nth-of-type(5) span{
+    background-color: yellow; color: black;
+    transform: rotate(10deg) translate(100px,50px) skew(10deg,10deg);
+    opacity: 0.5;
+    /* opacity : 투명도를 주면 그 공간 안에 있는 모든거에 투명도가 들어감 / 
+    부드럽게 나타나고 없애는 부분에 넣으면 더 자연스러운 !*/
+}
+div:nth-of-type(6) span{
+    background-color: orange; color: black;
+    transform: rotate(10deg) translate(100px,50px) skew(10deg,10deg) scale(1.2);
+}

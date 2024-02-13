@@ -1,0 +1,218 @@
+/* body{
+    width: 100%; margin: 0 auto; padding-top: 30px; 
+}
+ul{
+    width: 70%;
+    margin: 0; padding: 0;
+    list-style: none;
+    margin: 0 auto;
+    min-width: 400px;
+}
+ul li{
+    width: 100%; line-height: 50px;
+    color: gray;
+    padding: 0 30px;
+    text-transform: capitalize;
+
+}
+ul li:after{
+    content: ''; display: block; clear: both;
+}
+ul li:first-child{
+    background-color: rgb(98, 98, 98);
+    border-width: 0 0 1px;
+    border-style: solid;
+    border-color: red;
+}
+ul li:last-child{
+    border-width: 0 0 1px;
+    border-style: solid;
+    border-color: red;
+}
+ul > li:not(:first-child):nth-child(2n){
+    background-color: rgb(245, 245, 245);
+}
+ul > li:not(:first-child):nth-child(2n):hover{
+    background-color: orange;
+}
+ul > li:not(:first-child):nth-child(2n+1){
+    background-color: rgb(211, 210, 210);
+}
+ul > li:not(:first-child):nth-child(2n+1):hover{
+    background-color: blue;
+} */
+/* ul li span:nth-child(8) span:last-of-type{
+    line-height: 10px;
+    word-break: normal;
+} */
+/* ul li span{
+    display: block; float: left;
+    margin: 0;
+}
+ul li span:nth-of-type(1){
+    width: 15%;
+}
+ul li span:nth-of-type(2){
+    width: 40%;
+}
+ul li span:nth-of-type(3){
+    width: 15%;
+} */
+/* ul li span{
+    color: green;
+} */
+/* ul li span:first-child(8):nth-of-type(2){
+    color: red;
+} */
+
+/* div:first-of-type{
+    margin: 0 auto; width: 70%;
+    position: relative;
+}
+div:first-of-type a{
+    display: block;
+    position: absolute; top: 10px;
+    text-decoration: none; color: rgb(66, 65, 65);
+    text-align: center;
+}
+div:first-of-type a:first-of-type{
+    position: absolute; left: 25%;
+}
+div:first-of-type a:last-of-type{
+    position: absolute; right: 25%;
+}
+div:first-of-type ol{
+    margin: 0; padding: 0;
+}
+div:first-of-type ol li{
+    display: block;
+}
+div:first-of-type ol li a{
+    display: block; 
+    width: 5%; margin: 0;
+}
+div:first-of-type ol li a:hover{
+    border: 1 solid purple;
+    border-radius: 10px;
+    background-color: purple;
+    color: pink;
+}
+div:first-of-type form{
+    position: relative;
+}
+div:first-of-type form input{
+    display: block; margin: 0 auto;
+    /* position: absolute; left: 45%; top: 5px; 
+}
+div:first-of-type form input:first-child{
+    border: 2 solid green;
+}
+div:first-of-type form input:last-child{
+    border: 1px solid purple;
+    background-color: pink;
+    color: purple;
+} */
+
+/* 풀이 */
+body{
+    margin: 0 auto; width: 70%;
+}
+ul{
+    padding: 0; list-style: none;
+}
+ul li:first-child{
+    border-bottom: 1px solid deeppink; 
+    background-color: #505050;
+}
+ul li:last-child{
+    border-bottom: 1px solid deeppink;
+}
+ul li:nth-child(2n+1):not(:first-child){
+   background-color: #e9e9e9; 
+}
+ul li:nth-child(2n){
+    background-color: #fafafa;
+}
+ul li:nth-child(2n+3):hover{
+    background-color: darkblue;
+}
+ul li:nth-child(2n):hover{
+    background-color: darkorange;
+}
+ul li:after{
+    content: ''; display: block; clear: both;
+}
+ul li span{
+    display: block; float: left; padding: 15px 2%; 
+    box-sizing: border-box;
+    color: #999;
+}
+ul li:first-child span:nth-child(2){
+    color: palegreen;
+}
+ul li:not(:first-child):hover span{
+    color: paleturquoise;
+}
+ul li:not(:first-child,:nth-child(2n+1)):hover span:nth-child(2){
+    color: white;
+}
+ul li:not(:first-child) span:nth-child(2){
+    color: orangered;
+    /* span 앞에 띄어쓰기는 <li 안에 span>이라는 뜻 */
+}
+ul li span:nth-child(2n+1){
+    width: 15%;
+}
+ul li span:nth-child(2){
+    width: 40%;
+}
+ul li span:nth-child(4){
+    width: 30%;
+}
+div:first-of-type{
+    position: relative; width: 50%; 
+    margin: 0 auto 15px; padding: 0 3%;
+}
+/* div:first-of-type을 쓴 이유는 실무에선 제일 큰 부분(ex.body,main)을 잡고 선택자를 써야 되기 때문에 연습한거임 */
+div:first-of-type a{
+    text-decoration: none; color: #555; 
+    display: block; text-align: center;
+    font-size: 12px; line-height: 23px;
+}
+div:first-of-type > a{
+    position: absolute; width: 3%; top: 0;
+}
+div:first-of-type > a:nth-of-type(1){
+    left: 0;
+}
+div:first-of-type > a:nth-of-type(2){
+    right: 0;
+}
+div:first-of-type ol{
+    margin: 0; padding: 0;
+}
+div:first-of-type ol:after{
+    content: ''; display: block; clear: both;
+}
+div:first-of-type ol li{
+    display: block; float: left; width: 9%;
+}
+div:first-of-type ol li:not(:first-child){
+    margin-left: 1.11%;
+}
+div:first-of-type ol li a:hover{
+    background-color: darkorchid; 
+    color: violet; 
+    border-radius: 5px;
+}
+
+form fieldset{
+    border: none; 
+    padding: 0; margin: 0; 
+    text-align: center;
+}
+form fieldset input[type='submit']{
+    border: 1px solid darkorchid; 
+    background-color: lavender; color: darkorchid;
+    text-transform: uppercase;
+}

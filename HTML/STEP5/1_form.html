@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form tag</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>HTML4 Input</legend>
+            <ul>
+                <li>
+                    <input type="text">
+                </li>
+                <li>
+                    <input type="password" tittle="비밀번호입력">
+                </li>
+                <li>
+                    <input type="radio" name="radioGroup" id="btn_radio1">
+                    <label for="btn_radio1">iteml</label>
+                    <input type="radio" name="radioGroup" id="btn_radio2">
+                    <label for="btn_radio2">item2</label>
+                </li>
+                <li>
+                <input type="checkbox" id="btn_chk1">
+                <label for="btn_chk1">item1</label>
+                <input type="checkbox" id="btn_chk2">
+                <label for="btn_chk2">item2</label>
+                <input type="checkbox" id="btn_chk3">
+                <label for="btn_chk3">item3</label>
+                <input type="checkbox" id="btn_chk4">
+                <label for="btn_chk4">item4</label>
+                </li>
+                <!-- radio/checkbox는 값을 어떻게 넘기냐? -> 변조된 값을 넣어두고 server에서 재조립 -->
+                <li>
+                    <textarea cols="30" rows="10" tittle="가입인사를 남겨보세요."></textarea>
+                    <!-- cols,row 글자 수 -->
+                </li>
+                <!--  sclect>option*5 -->
+                <li>
+                    <select>
+                        <option value="default">직업선택</option>
+                        <optgroup label="구직자">
+                            <option value="j1">무직</option>
+                            <option value="j2">학생</option>
+                        </optgroup>
+
+                        <optgroup label="근로자">
+                            <option value="j3">전문직</option>
+                            <option value="j4">공무원</option>
+                        </optgroup>
+                    </select>
+                </li>
+                <li>
+                    <input type="image" src="https://via.placeholder.com/150x50?text='button'" alt="imgButton">
+                    <!-- 이미지 내에서 엑스 와이 값을 생성(회색 박스를 나타내기 위한 https임 외워두기)
+                    이미지를 버튼으로 사용해야 될 때, 이미지태그는 사진이지 버튼이 아니라서, 퍼블리셔는 쓸 일이 별루;; -->
+                    <input type="button" value="비밀번호확인">
+                    <button><mark>비밀번호확인</mark></button>
+                    <!-- input type="button" 가장 많이 쓰는 타입 효율이 좋음, 단순 호출, 버튼 안에 태그 사용 불가능 / 
+                        그냥 button -> 로딩을 해서 통신에 !전송! 효율이 나쁨, 버튼 안에 태그 사용 가능! 호환이 좋음-->
+                    <input type="file" tittle="파일을 등록하세요">
+                    <!-- name이랑 id는...? input의 file은 커스터마이즈?가 안됨,  -->
+                    <input type="submit" value="확인">
+                    <!-- submit !전송!기능, url이 변함, ★무조건 submit은 form태그 안에 있어야 됨-->
+                    <input type="reset" value="취소">
+                    <!-- 전송이 아니라 그냥 입력한 거 다 초기화, 요즘엔 많이 안 만들어(사용자들이 잘 안 써서),
+                     -->
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <!-- 모양 바꾸는게 안되는 input들 -->
+
+            <legend>HTML5 INPUT</legend>
+            <label for="usrID">사용자아이디 : </label>
+            <input type="email" id="userID" placeholder="example@examli.com" required maxlength="8" autofocus >
+            <!-- 이메일뿐만 아니라 모든 input에는 다 쓸 수 있는 것들! -->
+
+            <input type="url" placeholder="https://www.example.cpm">
+            <!-- email:@ / url:.com(...) 접근성 뭐시기... -->
+
+            <input type="'tel'"> 
+            <!-- 전화번호 입력받을 수 있는 거, 한! 줄!로 입력 받기!, 대쉬입력이 비권장 010-0000-0000(x), 숫자만 입력받게끔
+            /전화번호 전용 입력 tag, 활용도가 굉장히 높음, 어플리케이션/서버와 결합이 잘 됨  -->
+           
+            <input type="number" min="1" max="10" step="1" value="1">
+            <!-- type number(전용)에서만 min, max, step이 있음, 전용 값, 스피너,
+            사용 용도가 정해져있는 input(수량 전문 태그), 음수 개념 없음-->
+           
+            <input type="range" min="-2" max="2" step="1" value="0">
+            <!-- 범위를 지정해주는 인풋, 작동방식이 number랑 달라, ex.가격대, 키 등 맞춤 설정 할 때,   -->
+
+            <input type="date">
+            <input type="month">
+            <input type="week">
+            <input type="datetime-local">
+            <!-- 사용불가 <input type="datetime">  -->
+
+            <input type="search">
+            <!-- 검색어 입력, 검색! 
+            input type="serach" autocomplete="---"-->
+            <input type="search" name="" id="">
+
+            <label for="colorPick">색상선택 : </label>
+            <input type="color" id="colorPick">
+            <!-- 색상 코드가 들어가는거임,  -->
+        </fieldset>
+        <input type="submit" value="전송">
+    </form>
+</body>
+</html>

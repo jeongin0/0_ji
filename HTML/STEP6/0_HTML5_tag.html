@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>잔여 html5 Tag's</title>
+    <style>
+        body > ul li{border:1px solid black; width:250px; list-style:none;}
+        body > ul li figure{position:relative;}
+        body > ul li figure img{width:100%;}
+        body > ul li figure:hover figcaption{display:block;}
+        body > ul li figure figcaption{display:none; position:absolute; width:100%; height:100%; background-color:rgba(0,0,0,0.5); left:0; top:0;}
+        body > ul li figure figcaption dl{text-align:center; color:white; padding:0;}
+        body > ul li figure figcaption dl dt{font-size:24px;}
+        body > ul li figure figcaption dl dd{margin:0;}
+    </style>
+</head>
+<body>
+    <figure>
+        <img src="https://via.placeholder.com/250?text=unerfined" alt="미정의된 이미지">
+        <figcaption>이미지가 들어갈 자리입니다</figcaption>
+        <!-- img가 상징적인 구조여야 됨 -->
+    </figure>
+    <!-- ul>li>figure>img+figcaption>dl>dt{example}+dd*2{example} -->
+    <ul>
+        <li>
+            <figure>
+                <!-- 텍스트보다 이미지가 더 중요할 때 -->
+                <img src="https://via.placeholder.com/250" alt="example">
+                <figcaption>
+                    <!-- 이미지의 보조 설명, 있든 없든 상관 없음 -->
+                    <dl>
+                        <dt>example Name</dt>
+                        <dd>example Descript</dd>
+                        <dd>example Price</dd>
+                    </dl>
+                </figcaption>
+            </figure>
+        </li>
+    </ul>
+
+    <time datetime="2023-10-25T10:06">2023년 10월 25일 오전 10시</time>
+    <!-- 서버에서 넘어와서 출력되는 태그, 밭는 태그
+    서버에서 시간을 받으려면, 시간 정보를 전탈받음->datetime을 적으면 됨 -->
+    <!-- 
+        ?날짜, 시간 기록을 하는 time 마크업은
+        ? 1. datetime은 브라우저에서 인식하는 날짜 부분이다. yyyy-mm-dd 형식을 따른다.
+        ? 날짜만 ? 2016-06-12, 시간만? 09:00:00, Z는 그리니치 시간대를 나타내는 Zulu의 약자 
+        ? 2. pubdate(문서작성날짜)는 삭제-
+        ? 3. 브라우저에 표시될 내용 -->
+
+    <progress value="22" max="100"></progress>
+    <!-- progress<진행도>, 색을 바꿀 수 없는, 이것만으로는 가동이 어려움, 시작하면 끝이 나야하는 태그
+    ex.프로그램 설치할 때 멈추면은 정상적이지 않는다는 거, 요즘엔 잘 안 쓰는데 무거운 웹사이트에선 필요할 수도, 파일 다운로드 받는 파일도 profress가 필요함
+    max를 100으로 쓰는 일은 잘 없음, value가 진행도를 나타내는데 멈춰있으면 안됨(실시간 변동이 필요), 모양을 직접적으로 바꾸는 건 불가, progress를 사용자 눈엔 숨겨놓고 가동하게 해야 됨 -->
+    <meter value="80" max="100" min="10" high="90" low="20"></meter>80%
+    <!-- meter 멈춰있어야 하는 거, 현재 상태를 보여주는 그래프 같은 거, 현재상태를 표현,
+    high/low(경고! 표시할 범위)를 항상 같이 쓰는 건 아님,  -->
+    <ruby>
+        韓 <rt>かん</rt>
+        <!-- 중요한 거 아님, 언어를..., 우리나라에선 쓰지 않음 -->
+    </ruby>
+    <address>
+        <span>인천광역시 부평동 sbs학원</span>
+        <!-- span -->
+        <a href="https://www.incheon,sbsart.com">사이트바로가기</a>
+        <a href="tel:+82324370111">032-437-0111</a>
+        <a href="milto:privacy@koreadugroup.com">이메일보내기</a>
+        <!-- address 블럭 태그, p같은, 소규모 글자들 담는, 대상과 컨택할 수 있는 내용은 다 담을 수 있음 
+        !들어갈 공간이 정해져있는 태그임!, 정해진 공간에만 들어가야 됨! -->
+    </address>
+    
+
+    <!-- 익스플로어 지원 불가 태그 -->
+    <details>
+        <summary>copyright 1999 - 2023.</summary>
+        <!-- summary에 들어있는 내용을 다름,
+        이하 무엇을 사용해도 상관은 없으나 반드시 !block 속성!이어야 함 -->
+        <p>-by Refsnes Data. ALL Rights Reserved.</p>
+        <p>ALL content and graphics on this web site are the property of the company Rdfsnes Data.</p>
+    </details>
+    <ul>
+        <li>User <bdi>hrefs</bdi>: 60 points</li>
+        <li>User <bdi>jdoe</bdi>: 80 points</li>
+        <li>User <bdi>إيان</bdi>: 90 points</li>
+    </ul>
+    <!--bdi는 자신의 외부 텍스트와 다른 포맷으로 규정되는 텍스트를 분리하는데에 사용한다.(ex 다국어지원)-->
+
+    <form action="demo_keygen.asp" method="get">
+        Username: <input type="text" name="security">
+        Encryption: <keygen name="security">
+        <input type="submit">
+    </form>
+    <!--개발쪽 보안에 주된 사항이다. 보안키를 생성해내고, 
+        공개 키를 제출하는데, 개인 키는 로컬에 저장되게 하고, 
+        공개키를 서버로 전송시킨다.-->
+    <form oninput="x.value=parseInt(a.value) + parseInt(b.value)">
+        0<input type="range" id="a" value="50">100
+        + 
+        <input type="number" id="b" value="50">
+        =
+        <output id="x" for="a b"></output>
+    </form>
+    <!--form에 지정된 스크립트 연산을 지정 input(id)들로 수행하여, 
+        결과값을 산출해내는 식이다.
+        range는 값을 마우스를 이용해 입력할 수 있고, number는 직접입력 
+        및 up,down버튼을 이용해 입력할수있다.-->
+
+    <main>
+        <h1>Web Browsers</h1>
+        <p>Google Chrome, firefox, and Internet Explorer are the miist used browsers today.</p>
+
+        <article>
+            <h2>Google Chrome</h2>
+            <p>
+                Google Chrome is a free, open=source wdb browser developed by Google, released in 2008.
+            </p>
+        </article>
+    </main>
+    <!-- main tag-> 제일 큰! 태그, (body와 같은 크기임) 메인페이지 전체를 담당 
+    article->문서단위의 태그, 주 컨텐츠가 텍스트일 때, iframe, 오디오 등 못들어와. 문서단위이니까 파일태그를 달고 다님(ex.이용약관 정보들 등)-->
+
+    <!-- 익스플로어, 사파리 지원불가 -->
+    <input type="text" list="browsers">
+    <datalist id="browsers">
+        <option value="Internet Exploer">IE</option>
+        <option value="FireFox">FF</option>
+        <option value="Chrome">CR</option>
+        <option value="Opera">O</option>
+        <option value="Safari">SF</option>
+    </datalist>
+
+    <!-- 대부분 지원불가 -->
+    <dialog open>this is an open dialog </dialog>
+    <!-- open 넣으면 나오고 없음 안나오고 -->
+</body>
+</html>

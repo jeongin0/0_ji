@@ -1,0 +1,117 @@
+*{
+    font-family: 'Poppins';
+}
+a{
+    text-decoration: none;
+}
+
+@media screen and (min-width:1280px){
+    /* max-width는 % 계산 안돼 */
+    
+    header>div,
+    .features,
+    .smartJackpot,
+    .faq,
+    footer div{
+        max-width: 1170px; margin: 0 auto;
+    }   
+
+    header{
+        background: url('../images/bg_01.png') left top / cover no-repeat;
+    }
+    header>div{
+        padding: 95px 0 237px; position: relative;
+    }   
+    header>div h1{
+        max-width: 117px; padding: 12px 0 0; 
+    }
+    header>div h1 a{
+        display: inline-block; 
+    }
+    header>div h1 a img{
+        width: 100%;
+    }   
+    header>div>nav{
+        max-width: 70%; position: absolute; right: 0; top: 93px;
+    }
+    header>div>nav:after{
+        content: ''; display: block; clear: both;
+    }
+    header>div>nav ul{
+        list-style: none; float: right; right: 0px; top: 100px;
+    }
+    header>div>nav ul li{
+        display: inline-block; line-height: 44px;
+        margin: 0 35px 0 0;
+    }
+    header>div>nav ul li a{
+        font-size: 16px; font-weight: 400; color: #242f51;
+    }
+    header>div>nav ul input{
+        border: 1px solid #2500f9; line-height: 55px; width: 170px; padding: 0;
+        border-radius: 30px; background-color: #2500f9; color: white; font-weight: 800;
+        cursor: pointer; font-size: 16px;
+    }
+    header>div>div{
+        padding: 255px 0 100px 70px;
+    }
+    header>div>div img{
+        display: inline-block; position: relative; padding-bottom: 30px;
+    }
+    header>div>div span{
+        display: inline-block; color: #09142e; width: 323px;
+        font-size: 18px; padding: 10px 0; position: absolute; left: 118px;
+    }
+    header>div>div h2{
+        font-size: 60px; line-height: 75px; color: #09142e; width: 530px; padding-bottom: 20px;
+        font-weight: 700;
+    }
+    header>div>div p{
+        font-size: 18px; font-weight: 400; line-height: 28px; width: 500px; padding-bottom: 40px;
+    }
+    header>div>div form input:first-of-type{
+        border: 1px solid #2500f9; line-height: 55px; width: 170px; padding: 0;
+        border-radius: 30px; background-color: #2500f9; color: white; font-weight: 800;
+        cursor: pointer; font-size: 16px; margin-right: 27px;
+    }
+    header>div>div form input:last-of-type{
+        border-style: none; background-color: transparent; font-size: 16px; color: #2500f9;
+        font-weight: 400;
+    }
+
+
+    footer{
+        background-color: #09142e; padding: 115px 0 160px;
+    }
+    footer div{
+        text-align: center;
+    }
+    footer div h2{
+        max-width: 117px; margin: 0 auto; padding: 0 0 48px;
+    }
+    footer div h2 img{
+        width: 100%;
+    }   
+    footer div nav ul{
+        list-style: none;
+    }
+    footer div nav ul li{
+        display: inline-block; margin: 0 35px 50px 0; line-height: 44px;
+    }
+    footer div nav ul li a{
+        font-size: 16px; font-weight: 400; color: white;
+    }
+    footer div ol{
+        list-style: none;
+    }
+    footer div ol li{
+        display: inline-block; padding: 0 0 90px;
+    }
+    footer div ol li a{
+        display: block; margin: 0 25px 0 0;
+    }
+    footer div p{
+        font-size: 16px; font-weight: 400; color: rgba(255, 255, 255, 0.21);
+        line-height: 44px;
+    }
+}

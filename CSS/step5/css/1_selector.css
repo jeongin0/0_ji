@@ -1,0 +1,243 @@
+.tagSelector h1{color:#0c0; font-size:20px;}
+.tagSelector p{color:#0cf; font-size:15px;}
+.tagSelector span{color:#336; font-size:13px;}
+
+/*태그선택자 사용법*/
+
+.idSelector p#paragraph1{font-size:16px; text-decoration:underline;}
+.idSelector p#paragraph2{color:#09F; text-decoration:line-through;}
+.idSelector p#paragraph3{font-weight:bold; text-decoration:overline;}
+
+/*ID선택자 사용법*/
+
+.classSelector p.f_size{font-size:20px;}
+.classSelector p.f_weight{font-weight:bold;}
+.classSelector p.f_color{color:#9cf;}
+
+/*CLASS 선택자 사용법 + 다중 클래스 지정 */
+
+.attrSelector fieldset{
+    border: 1px solid #555; background-color: slateblue;
+}
+.attrSelector fieldset legend{
+    border: 1px solid slateblue; 
+    background-color: #555; color: white;
+    padding: 10px;
+}
+.attrSelector fieldset ul{
+    margin: 0; padding: 0; list-style: none;
+}
+.attrSelector fieldset ul li{
+    color: white; font-size: 14px; line-height: 30px;
+}
+.attrSelector fieldset ul li label{
+    width: 100px; display: inline-block;
+}
+.attrSelector fieldset ul li input{
+    padding: 5px; vertical-align: middle;
+}
+.attrSelector fieldset ul li input[type='text']{
+    background-color: salmon; 
+    border: 3px solid lightcoral; color: maroon;
+}
+.attrSelector fieldset ul li input[type='password']{
+    background-color: lightgreen; border: 3px solid lime;
+}
+.attrSelector fieldset ul li input[type='radio']{
+    width: 25px; height: 25px;
+    /* background-color: black; border: 5px solid yellow; */
+}
+.attrSelector fieldset ul li input[tpye='checkbox']{
+    width: 25px; height: 25px;
+    /* background-color: black; border: 5px solid yellow; */
+}
+.directSelector > h1{
+    font-size: 28px; color: slateblue;
+}
+/* 직계선택자 */
+.directSelector > span{
+    font-size: 22px; color: maroon; line-height: 40px;
+    font-weight: bold;
+}
+.sameSelector h1~h2{
+    background-color: #333; color: white;
+}
+/* h1 이하에 있는 모든 h2 
+~ = 이하 전체, 동위를 벗어나지 못함
+직계는 부모를 기준으로 했을 때고
+동위는 같은 위치의 지들끼리 하는거임*/
+.sameSelector h1+h2{
+    font-size: 40px; color: plum;
+}
+/* + = 바로 뒤
+구조화를 할 때 동일한 태그를 안 쓰기 때문에 +를 더 자주 쓸거임
+h1 바로 뒤에 있는 애 */
+.stringAttrSelector img[src$='png']{
+    width: 100px; border: 3px solid #f00;
+}
+/* $를 쓰면 맨 뒤를 지정함 */
+.stringAttrSelector img[src$='jpg']{
+    border: 3px solid black; border-radius: 20px;
+}
+.stringAttrSelector img[src$='gif']{
+    border: 2px dashed black; width: 200px;
+}
+/* *= = 특정 글자를 지정, 편리하지만 구분없이 쓰면 안돼
+제일 마지막 선택지가 될 수 있게 하기 */
+.stringAttrSelector h1[title*='제목']{
+    color: red;
+}
+.stringAttrSelector h1[title^='남자']{
+    color: blue;
+}
+/* 
+    ?속성값일치선택자.
+    ? *= : 해당 단어가 들어가는 모든 대상 선택. (전,후 상관없음.)
+    ? ^= : 해당 단어로 시작하는 것만 선택.
+    ? $= : 해당 단어로 끝나는 대상 선택.
+    ? |= : 해당 단어로 시작하거나 -으로 구분되는 대상 선택.
+    ? ~= : 띄어쓰기 기준. 해당 단어 포함.
+*/
+.eventSelector a{
+    display: block;
+    font-size: 14px; line-height: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+.eventSelector a:link{/* 대상 : link가 걸린 상태 = href attr을 지닌 상태 */
+    color: red;
+}
+
+.eventSelector a:hover{/* 대상 : nouse curosr가 올라간 상태 */
+    color: black; background-color: red;
+}
+
+.eventSelector a:active{/* 대상 : click이 일어났을 때, 마우스를 누르고 있는 상태 press상태와 동일*/
+    color: white; background-color: black;
+}
+.eventSelector a:visited{/* 링크를 누른 후 나타나는 표시, 대상 : 을 방문한 적이 있는 상태 / 배경은 cursor를 올렸을 때  */
+    background-color: gray; color: mediumaquamarine;
+}
+.eventSelector a:focus{/* 클릭 대용으로 쓰면 안돼, 대상 : 에 초점이 맞춰진 상태 */
+    border: 3px solid deeppink;
+}
+/* a가 아니어도 적용할 수 있음! */
+
+.statusSelector input[type='checkbox']+label{
+    display: inline-block;
+    line-height: 20px; 
+    font-size: 20px;
+    vertical-align: baseline;
+    transition-duration: 0.75s;
+}
+.statusSelector input[type='checkbox']:checked+label{
+    line-height: 0px; 
+    font-size: 0px;
+}
+.statusSelector input:enabled{
+    background-color: black; color: white;
+}
+.statusSelector input:enabled::placeholder{
+    color: peachpuff;
+}
+.statusSelector input:disabled{
+    background-color: lightgray; color: darkgray;
+    /* height: 50px;
+    text-align: center; */
+}
+/* ! select option check -> selected */
+/* ? input checkbox, radio-> checked */
+
+.virtualSelector ul{
+    overflow: hidden; list-style: none; 
+    margin: 30px 0; padding: 0;
+    /* background-color: palevioletred; */
+}
+.virtualSelector ul li{
+    width: 14.28%; box-sizing: border-box;
+    margin: 0; padding: 15px; float: left;
+    text-align: center;
+}
+.virtualSelector ul li:nth-child(2n){
+    background-color: #444; color: white;
+}
+/* 2n은 2xn이라서 짝수를 짚음(나중에 더 생길 li의 짝수번째도 선택하는거임) */
+.virtualSelector ul li:nth-child(2n+1){
+    background-color: #09f; 
+}
+.virtualSelector ul li:first-child{
+    border-radius: 15px 0 0 15px;
+}
+.virtualSelector ul li:last-child{
+    border-radius: 0 15px 15px 0;
+}
+/* first는 child(1)로 쓸 수 있는데
+last는 무조건 last-child로 써야 돼 */
+/* ex) 2,3번만 하고 싶으면 nth-child를 두번 써야 돼 */
+/* todo https://css-tricks.com/examples/nth-child-tester/ */
+
+.shapeSelector h1:nth-of-type(2){
+    color: #30f;
+}
+/* h1중에 두번째에 있는 거 */
+.shapeSelector h2:first-of-type{
+    color: #0c6;
+}
+.shapeSelector h3:last-of-type{
+    color: #f0f;
+}
+/* 위 결과를 child로 변환해보기 */
+.shapeSelector h1:last-child{
+    color: #f0f;
+}
+.shapeSelector h2:nth-child(2){
+    color: #30f;
+}
+.shapeSelector h3:nth-child(4){
+    color: #0c6;
+}
+/* 
+.shapeSelector h1:last-child{color: #30f;}
+.shapeSelector h2:nth-child(2){color: #0c6;}
+.shapeSelector h3:nth-child(4){color: #f06;} 
+*/
+.textSelector h1::first-letter{
+    font-size: 100px; color: #09f;
+}
+.textSelector p::first-line{
+    color: #090; line-height: 30px;
+    font-size: 14px; text-decoration: underline;
+}
+/* br이 없으면 화면이 늘어날수록 첫 줄이 길어지면서 라인이 계속 이어짐
+반응형엔 br 안 찍어 */
+
+.backandfrontSelector p{
+    counter-increment: rint;
+}
+/* 앞으로도 생길 수 있는 p 태그들의 갯수를 세줌
+rint라는 이름표를 붙여줌  */
+.backandfrontSelector p::before{
+    /* 공간에서 가장 위를 열어주는 거임/ 공간을 만들지 않아도 위에 끼워주는 역할
+    가장 위쪽은 왼쪽을 말함 */
+    /* content: ''; 빈 문자 열을 선언한다 */
+    content: counter(rint) ".";
+    /* ol이 아니어도 ol처럼 다를 수 있는 방법 */
+}
+.backandfrontSelector p::after{
+    content: '-' attr(data-page) "page"; font-weight: bold;
+    color: deeppink; 
+}
+.reactionSelector>*{
+    color: #0059ff; 
+}
+.reactionSelector>*::selection{
+    background-color: #000; color: #ff0;
+}
+.notSelector input:not([type='text'],[type='password']){
+    background-color: red;
+}
+
+/* .practice p:first-child{
+    background-color: red;
+} */

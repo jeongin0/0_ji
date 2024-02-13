@@ -1,0 +1,237 @@
+
+
+@media screen and (min-width:1280px){
+    .features{
+        padding: 115px 0 107px;
+    }
+    .features>h2{
+        text-align: center; font-size: 16px; font-weight: 600; line-height: 28px;
+        color: #242f51; padding-bottom: 35px;
+    }
+    .features>ul{
+        list-style: none; padding-bottom: 200px;
+    }
+    .features ul li{
+       display: inline-block; 
+    }
+    .features ul li:first-child{
+        padding-left: 118px;
+    }
+    .features ul li a{
+        display: block; margin: 0 20px; 
+    }
+    .features ul li a img{
+        width: 100%;
+    }
+    .features div{
+        width: 51.28%;
+    }
+    .features div strong{
+        font-size: 36px; font-weight: 600; width: 300px; display: block;
+        line-height: 46px; color: #242f51; margin-bottom: 25px;
+    }
+    .features div p{
+        font-size: 16px; font-weight: 400; line-height: 26px;
+        width: 71.66%; color: #616368; margin-bottom: 90px;
+    }
+    .features div ol{
+        list-style: none;
+    }
+    .features div ol li:nth-child(1){background-image: url('../images/icon_01.png');}
+    .features div ol li:nth-child(2){background-image: url('../images/icon_02.png');}
+    .features div ol li:nth-child(3){background-image: url('../images/icon_03.png');}
+    .features div ol li{
+        background-position: left;
+        background-repeat: no-repeat;
+        margin-bottom: 60px;
+    }
+    .features div ol li dl{
+        width: 46.83%; margin-left: 120px;
+    }
+    .features div ol li dl dt{
+        font-size: 20px; font-weight: 600; margin-bottom: 20px;
+        text-align: left;
+    }
+    .features div ol li:nth-of-type(1) dl dt{color: #f55767;}
+    .features div ol li:nth-of-type(2) dl dt{color: #2563ff;}
+    .features div ol li:nth-of-type(3) dl dt{color: #40975f;}
+    .features div ol li dl dd{
+        font-size: 16px; line-height: 26px; font-weight: 400; color: #616368;
+        text-align: left;
+    }
+
+    .smartJackpot{
+        background-image: url('../images/border_text_line.png');
+        background-repeat: no-repeat;
+        background-position: center top;
+        position: relative;
+    }
+    .smartJackpot h2{
+        font-size: 40px; line-height: 55px; font-weight: 600; max-width: 36.75%;
+        margin-left: 55px; color: #242f51; display: inline-block;
+        padding-bottom: 110px;
+        
+    }
+    .smartJackpot p{
+        max-width: 34.78%; font-size: 16px; line-height: 26px; font-weight: 400;
+        color: #616368; display: inline-block;
+        position: absolute; right: 10.31%; top: 35px;
+    }
+    .smartJackpot ul:after{
+        content: ''; display: block; clear: both; 
+    }
+    .smartJackpot ul li:nth-child(1){
+        background-image: url('../images/icon_04.png'); margin-left: 57px;
+    }
+    .smartJackpot ul li:nth-child(2){
+        background-image: url('../images/icon_05.png');
+    }
+    .smartJackpot ul li:nth-child(3){
+        background-image: url('../images/icon_06.png');
+    }
+    .smartJackpot ul li:not(:nth-child(1)){
+        margin-left: 80px;
+    }
+    .smartJackpot ul li{
+        width: 25.64%; float: left; 
+        background-repeat: no-repeat;
+        background-position: left top;
+        display: block;
+        padding: 125px 0 150px;
+    }
+    .smartJackpot ul li dl dt{
+        font-size: 20px; margin-bottom: 15px; font-weight: 600;
+    }
+    .smartJackpot ul li:nth-of-type(1) dl dt{color: #f55767;}
+    .smartJackpot ul li:nth-of-type(2) dl dt{color: #2563ff;}
+    .smartJackpot ul li:nth-of-type(3) dl dt{color: #40975f;}
+    .smartJackpot ul li dl dd{
+        font-size: 16px; font-weight: 400; color: #616368;
+        line-height: 26px;
+    }
+    .testimonila div{
+        padding-bottom: 210px;
+    }
+    .testimonila div span{
+        display: inline-block; width: 49%;
+    }
+    .testimonila div span img{
+        width: 100%; 
+    }
+    .testimonila div section{
+        float: right; width: 51%;
+    }
+    .testimonila div section h2{
+        font-size: 40px; font-weight: 600; max-width: 61.34%;
+        line-height: 50px; color: #242f51; margin-bottom: 23px;
+    }
+    .testimonila div section p{
+        font-size: 16px; font-weight: 400; line-height: 26px; max-width: 55%;
+        margin-bottom: 38px;
+    }
+    .testimonila div section strong{
+        display: block; padding-top: 50px;
+        background-image: url('../images/star.png');
+        background-position: left top;
+        background-repeat: no-repeat;
+        font-size: 20px; font-weight: 600; color: #242f51; margin-bottom: 25px;
+    }
+    .testimonila div section span{
+        font-size: 16px; line-height: 26px; font-weight: 400; color: #616368;
+        max-width: 68.09%; display: block; margin-bottom: 60px;
+    }
+    .testimonila div section ul{
+        list-style: none; max-width: 40%;
+    }
+    .testimonila section ul li{
+        background-image: url('../images/face_01.png');
+        background-position: left top;
+        background-repeat: no-repeat;
+    }
+    .testimonila div section ul li dl{
+        margin-left: 120px;
+    }
+    .testimonila div section ul li dl dt{
+        padding-top: 26px; margin-bottom: 10px; font-size: 18px; font-weight: 600;
+        color: #242f51;
+    }
+    .testimonila div section ul li dl dd{
+        font-size: 18px; font-weight: 400; color: #616368; padding-bottom: 20px;
+    }
+    .testimonila div section form{
+        background-image: url('../images/border_backgo_line.png');
+        background-position: left; 
+        background-repeat: no-repeat;
+    }
+    .testimonila div section form input{
+        display: inline-block;
+    }
+    .faq h2{
+        font-size: 40px; line-height: 58px; font-weight: 600; color: #242f51;
+        text-align: center; margin-bottom: 28px;
+    }
+    .faq p{
+        width: 55%; font-size: 16px; line-height: 26px; text-align: center;
+        color: #616368; margin: 0 auto 65px;
+    }
+    .faq ul{
+        list-style: none; padding-bottom: 40px;
+    }
+    .faq ul li{
+        background-color: #f5f7fa;
+    }
+    .faq ul li:not(:first-child){
+        line-height: 63px; padding-left: 50px; font-weight: 500;
+        font-size: 20px; color: #242f51;
+        background-position: right 38px center; 
+        background-repeat: no-repeat;
+    }
+    .faq ul li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .faq ul li:first-child dl{
+        padding-left: 50px; max-width: 85%;
+    }
+    .faq ul li:first-child dl dt{
+        font-size: 20px; font-weight: 600; color: #242f51; padding: 50px 0 42px;
+    }
+    .faq ul li:first-child dl dd{
+        font-size: 16px; font-weight: 400; line-height: 26px; color: #616368;
+        padding-bottom: 78px;
+    }
+    .faq ul li:nth-child(2){
+        background-image: url('../images/but_plus.png');
+    }
+    .faq ul li:nth-child(3){
+        background-image: url('../images/but_plus.png');
+    }
+    .faq ul li:nth-child(4){
+        background-image: url('../images/but_plus.png');
+    }
+    .faq ul li:nth-child(5){
+        background-image: url('../images/but_plus.png');
+    }
+    .freeTrail{
+        background-image: url('../images/bg_04.png');
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        padding-top: 160px;
+    }
+    .freeTrail h2{
+        font-size: 48px; margin-bottom: 25px; padding-left: 14.37%; color: #242f51;
+    }
+    .freeTrail p{
+        font-size: 16px; font-weight: 400; line-height: 26px; margin-bottom: 50px;
+        padding-left: 14.37%; max-width: 40.31%; color: #616368;
+    }
+    .freeTrail form{
+        padding-left: 14.37%; padding-bottom: 105px;
+    }
+    .freeTrail form input:first-child{
+        margin-right: 32px;
+    }
+
+    
+
+
+}

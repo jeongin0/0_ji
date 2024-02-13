@@ -1,0 +1,265 @@
+
+
+@media screen and (min-width:1280px){
+    #about{
+        padding-top: 70px; padding-bottom: 70px;
+    }
+    #about:after{
+        content: ''; display: block; clear: both;
+    }
+    #about img{
+        float: left; margin-left: 6.8%; margin-right: 10.63%;
+    }
+    #about figcaption h2{
+        font-size: 22px; font-weight: 700; padding-bottom: 20px;
+    }
+    #about figcaption p{
+        font-size: 14px; font-weight: 300; line-height: 22px;
+    }
+    #about figcaption p:first-of-type{
+        padding-bottom: 25px;
+    }
+    #about figcaption p:last-of-type{
+        padding-bottom: 30px;
+    }
+    #about figcaption a.btn_more{
+        width: 120px;
+    }
+
+    .videoArea{
+        background: url('../images/bg_02.png.png') left top / cover no-repeat;
+        padding: 200px 0;
+    }
+    .videoArea a{
+        background: url('../images/icon_playbutton.png') center / contain no-repeat;
+        display: block; width: 100px; height: 100px; margin: 0 auto; text-indent: -9999px;
+        padding-bottom: 35px;
+    }
+    .videoArea h2{
+        text-align: center; font-size: 16px; font-weight: 700; color: white;
+    }
+
+    .expArea h2{
+        text-align: center; font-size: 22px; font-weight: 400; color: #413d4b;
+        padding-bottom: 15px;
+    }
+    .expArea>p{
+        text-align: center; font-size: 14px; font-weight: 400; color: rgba(47, 45, 53, 0.75);
+        padding-bottom: 18px;
+    }
+    .expArea hr{
+        width: 50px; display: block; margin: 0 auto; padding-bottom: 48px;
+    }
+    .expArea ul{
+        list-style: none; 
+    }
+    .expArea ul:after{
+        content: ''; display: block; clear: both;
+    }
+    .expArea ul li{
+        width: 33.33%; float: left; padding-top: 140px;
+        background-position: center top 80px; background-repeat: no-repeat;
+        box-sizing: border-box;
+    }
+    .expArea ul li:nth-child(1){background-image: url('../images/ico_01.png.png');}
+    .expArea ul li:nth-child(2){background-image: url('../images/ico_02.png.png');}
+    .expArea ul li:nth-child(3){background-image: url('../images/ico_03.png.png');}
+    .expArea ul li:nth-child(4){background-image: url('../images/ico_04.png.png');}
+    .expArea ul li:nth-child(5){background-image: url('../images/ico_05.png.png');}
+    .expArea ul li:nth-child(6){background-image: url('../images/ico_06.png.png');}
+    .expArea ul li h3{
+        font-size: 14px; font-weight: 900; text-align: center; margin-bottom: 20px;
+    }
+    .expArea ul li p{
+        text-align: center; width: 81.93%; margin-left: 5.85%;
+        font-size: 14px; font-weight: 400; line-height: 22px;
+    }
+    .expArea ul li:nth-child(3n+1){
+        border-width: 0 2px 0 0; border-color: #ebebeb; border-style: solid;
+    }
+    .expArea ul li:nth-child(3n-1){
+        border-width: 0 2px 0 0; border-color: #ebebeb; border-style: solid;
+    }
+
+    .teamArea{
+        background: url('../images/bg_3.png.png') left top / cover no-repeat;
+    }
+    .teamArea div h2{
+        font-size: 22px; font-weight: 700; color: white; padding-bottom: 10px;
+        text-align: center;
+    }
+    .teamArea div h2+p{
+        font-size: 14px; font-weight: 400; color: white; text-align: center;
+        padding-bottom: 18px;
+    }
+    .teamArea div hr{
+        width: 50px; display: block; margin: 0 auto; padding-bottom: 48px;
+        color: rgba(255, 255, 255, 0.2);
+    }
+    .teamArea div ul{
+        list-style: none; padding-bottom: 70px;
+    }
+    .teamArea div ul::after{
+        content: ''; display: block; clear: both;
+    }
+    .teamArea div ul li:not(:first-child){
+        margin-left: 2.12%;
+    }
+    .teamArea div ul li{
+        width: 23%; display: block; float: left; 
+    }
+    .teamArea div ul li figure{
+        background: url('https://via.placeholder.com/220x230');
+        padding-top: 230px;
+    }
+    .teamArea div ul li figure figcaption{
+        border: 1px solid rgba(255, 255, 255, 0.5); 
+        padding: 20px 0;
+    }
+    .teamArea div ul li figure figcaption dl{
+        text-align: center
+    }
+    .teamArea div ul li figure figcaption dl dt{
+        font-size: 14px; font-weight: 900; color: white;
+        margin-bottom: 10px;
+    }
+    .teamArea div ul li figure figcaption dl dd{
+        font-size: 13px; font-weight: 400; color: rgba(255, 255, 255, 0.7);
+    }
+    .teamArea div ul+p{
+        font-size: 14px; font-weight: 400; color: white; text-align: center;
+        padding-bottom: 30px;
+    }
+    .teamArea div a.btn_more{
+        width: 140px;
+    }
+
+    .worksArea h2{
+        max-width: 940px; margin: 0 auto 70px; display: block; position: relative;
+        font-size: 22px; font-weight: 700; color: #413d4b;
+    }
+    .worksArea h2>a{
+        position: absolute; right: 0; font-size: 14px; font-weight: 400; color: #413d4b;
+    }
+    .worksArea ul{
+        list-style: none; margin-bottom: 70px;
+    }
+    .worksArea ul:after{
+        content: ''; display: block; clear: both;
+    }
+    .worksArea ul li{
+        float: left; width: 16.66%; 
+    }
+    .worksArea ul li a{
+        display: block;
+    }
+    .worksArea ul li a img{
+        width: 100%; display: block;
+    }
+    .worksArea a.btn_more{
+        width: 140px;
+    }
+
+    .talkArea{
+        background: url('../images/bg_4.png.png') left top / cover no-repeat;
+    }
+    .talkArea>*{
+        max-width: 940px; margin: 0 auto;
+    }
+    .talkArea h2{
+        text-indent: -9999px;
+        background: url('../images/quote.png.png') center / cover no-repeat;
+        width: 33px; height: 26px; margin-bottom: 40px;
+    }
+    .talkArea p{
+        font-size: 16px; line-height: 26px; font-weight: 400; color: rgba(255, 255, 255, 0.85);
+        width: 48.12%; text-align: center; letter-spacing: 2.5; padding-bottom: 40px;
+    }
+    .talkArea p strong{
+        display: block; padding: 50px 0 10px; font-weight: 900;
+        font-size: 14px; line-height: 22px; color: white;
+    }
+    .talkArea p span{
+        display: block; font-size: 13px; font-weight: 400; line-height: 22px;
+        color: rgba(255, 255, 255, 0.7);
+    }
+    .talkArea div{
+        position: relative;
+    }
+    .talkArea div>a{
+        position: absolute;
+    }
+    .talkArea div>a:first-of-type{
+        left: 0;
+    }
+    .talkArea div>a:last-of-type{
+        right: 0;
+    }
+    .talkArea div ul{
+        list-style: none; text-align: center; margin: 0 auto;
+    }
+    .talkArea div ul:after{
+        content: ''; display: block; clear: both;
+    }
+    .talkArea div ul li{
+        float: left;
+    }
+
+    .contactArea h2{
+        display: none;
+    }
+    .contactArea form{
+        width: 50%;
+    }
+    .contactArea form fieldset legend{
+        font-size: 22px; font-weight: 700; color: #413d4b; margin-bottom: 30px;
+    }
+    .contactArea form fieldset input:not(:last-child){
+        display: block; width: 460px; line-height: 41px;
+        border: 1px solid rgba(0, 0, 0, 0.1); margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+    .contactArea form fieldset input::placeholder{
+        font-size: 14px; font-weight: 300; color: rgba(47, 45, 53, 0.5);
+        padding-left: 20px;
+    }
+    .contactArea form fieldset textarea{
+        resize: none; width: 460px; height: 200px; line-height: 40px; margin-bottom: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.1); box-sizing: border-box;
+    }
+    .contactArea form fieldset textarea::placeholder{
+        font-size: 14px; font-weight: 300; color: rgba(47, 45, 53, 0.5);
+        padding-left: 20px;
+    }
+    .contactArea form fieldset .btn_more{
+        border: 1px solid #00e0d0; line-height: 40px; color: #00e0d0;
+        font-size: 16px; font-weight: 400; display: block; width: 120px;
+        text-align: center; background-color: transparent;
+    }
+    .contactArea div{
+        width: 40%; margin-left: 10%;
+    }
+    .contactArea div h3{
+        font-size: 22px; font-weight: 700; color: #413d4b;
+    }
+    .contactArea div ul{
+        list-style: none; 
+    }
+    .contactArea div ul:after{
+        content: ''; display: block; clear: both;
+     }
+    .contactArea div ul li{
+        display: block; float: left; width: 50%;
+    }
+    .contactArea div ul li a{
+        display: block; text-align: center;
+    }
+    .contactArea div ul li a img{
+        width: 100%;
+    }
+    
+    
+
+
+
+}

@@ -1,0 +1,100 @@
+*{
+    /* background-color: rgb(174, 174, 174); */
+    margin: 0; padding: 0;
+}
+body{
+    margin: 0 auto; width: 1440px;
+}
+header{
+    background-color: rgb(68, 126, 126); height: 125px;
+    position: relative;
+    margin: 0 auto;
+}
+header:after{
+    content: ''; display: block; clear: both;
+}
+header h1{
+    position: absolute; left: 60px;  top: 40px;
+}
+header h1 a{
+    display: block;
+}
+header h1 img{
+    width: 100px; height: 30px;
+}
+header nav{
+    margin-left: 600px;
+    /* background-color: blue; */
+}
+header nav ul{
+    text-align: center;
+}
+header nav ul li{
+    font-size: 22px; line-height: 28px;
+    display: inline-block;
+    margin-top: 50px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul li.marginleft{
+    margin-left: 40px;
+}
+.wrap1{
+    width: 1440px; 
+    /* height: 685px; */
+    margin: 0 auto;
+    /* background-image: url('../images/bg_01.png') no-repeat; */
+}
+.wrap1 div{
+    background-color: rgb(131, 194, 131);
+}
+.wrap1 div h2 img{
+    width: 430px; height: 120px;
+    margin-top: 75px; margin-left: 460px;
+}
+.wrap1 div p{
+    font-size: 22px; line-height: 28px;
+    text-align: center;
+}
+.wrap1 div .box{
+    font-size: 16px; line-height: 24px;
+    text-align: center;
+}
+.wrap1 div input{
+    display: block; 
+    float: left; margin-right: 10px;
+    width: 230px; height: 30px; 
+}
+.wrap2{
+    /* position: relative;  */
+    background-color: rgb(157, 143, 121);
+    height: 810px;
+}
+.wrap2 h2{
+    padding-left: 160px; padding-top: 200px;
+    font-size: 60px;
+}
+.wrap2 p{
+    padding-left: 160px;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.wrap2 ul{
+    list-style: none;
+    padding-left: 160px;
+}
+.wrap2 ul li{
+    display: inline-block;
+    /* display: block; */
+    font-size: 15px;
+    border: 1px solid white;
+    width: 250px; line-height: 40px;
+
+}
+.wrap2 ul li a{
+    text-decoration: none;
+    color: white;
+}

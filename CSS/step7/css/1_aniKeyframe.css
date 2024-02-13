@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+}
+.circle{
+    background: linear-gradient(to bottom, #7db9f8 0%, #1e5799 100%);
+    width: 200px; height: 200px; border-radius: 100px; position: absolute;
+    animation-name: moveCircle;
+    animation-duration: 2s;
+    animation-direction: alternate; animation-iteration-count: infinite;
+    /* 애니메이션은 원래 편방향임  왕복으로 되려면 keyframes을 두개 써야 됨 /
+    animation-iteration-count keyframes 중복 없이 한번만으로 양방향 할 수 있음
+    */
+    animation-timing-function: cubic-bezier(.18,.47,.48,.84);
+    /* 가속도를 잘 넣어도 duration의 시간이 길면 안됨, 시간이 짧아야 가속도가 더 잘 보임 */
+}
+/* todo http://www.colorzilla.com/gradient-editor */
+@keyframes moveCircle {
+    0%{
+        left: 0; transform: rotate(0deg);
+        /* transform : 변화가 일어난 상태/
+        자손의 값이 많음/ 각도단위 -> deg(음수가능) */
+    }100%{
+        left: 800px; transform: rotate(360deg);
+    }
+
+    /*예)
+     0%{
+        left: 0; transform: rotate(0deg);
+    }50%{
+        left: 800px; transform: rotate(360deg);
+    }100%{
+        left: 0; transform: rotate(0deg);
+    } */
+}
+/* keyframe사용자가 지정하는 프레임 / 사용자가 정하는 모션 /
+시작과 도착지점을 걸면 자동으로 구현 / 상위호환 개념 / 
+더 많은 호환이 가능(?) */
+/* 애니메이션을 사용 할 때 편방향이 아님 무한제공 or 양방향으로 걸어두는게 대부분 */
+.circle:hover{
+    animation-play-state: paused;
+    /* running기본값 / paused 멈춤 */
+}

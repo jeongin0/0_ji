@@ -1,0 +1,36 @@
+body{
+    width: 200px; margin: 200px auto;
+}
+div{
+    /* 3d 명령어 preserve-3d*/
+    width: 200px; position: relative;
+    animation-name: rotate3D;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    transform-style: preserve-3d;
+}
+@keyframes rotate3D{
+    0%{
+        transform: rotateX(90deg) rotateY(45deg) ;
+    }100%{
+        transform: rotateX(450deg) rotateY(45deg) ;
+    }
+}
+div span{
+    width: 200px; height: 100px;
+    position: absolute; left: 0; top: 0;
+    opacity: 0.9;
+}
+div span:nth-child(1){background-color: red; transform: translateZ(100px);}
+div span:nth-child(2){background-color: green; transform: rotateY(90deg) translateZ(100px);}
+div span:nth-child(3){background-color: blue; transform: rotatey(180deg) translateZ(100px);}
+div span:nth-child(4){background-color: yellow; transform: rotateY(270deg) translateZ(100px);}
+div span:nth-of-type(5){
+    background-color: magenta; transform: rotateX(90deg) translateZ(100px); 
+    height: 200px;
+}
+div span:nth-of-type(6){
+    background-color: cyan; transform: rotateX(270deg); 
+    height: 200px;
+}

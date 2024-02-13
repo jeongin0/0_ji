@@ -1,0 +1,111 @@
+html,body{
+    height: 100%;
+}
+body{
+    font-family: 'Roboto'; background-color: #635f59;
+}
+header nav, .container{
+    max-width: 1170px; margin: 0 auto;
+}
+.container .row article{
+    transition-duration: 0.75s; transition-timing-function: ease-out;
+}
+.container .row>[class$='1']{background-color: #b6ff00}
+.container .row>[class$='2']{background-color: #0094ff}
+.container .row>[class$='3']{background-color: #ff00de}
+.container .row>[class$='4']{background-color: #dfd8ca}
+.container .row>[class$='8']{background-color: #b91646}
+header nav ul li a{
+    font-weight: 700;
+}
+/* 전체 사용 영역의 css */
+
+@media screen and (max-width: 767px){
+    header{
+        background-color: white; position: fixed; width: 100%;
+    }
+    header nav{
+        padding: 10px 0;
+    }
+    header nav #MUI_on{
+        display: none; 
+    }
+    /* none 안 하면 체크박스처럼 사각형 레이블 생김 */
+    header nav #MUI_on:checked+ul{
+        height: 340px;
+    }
+    header nav ul{
+        height: 18px; overflow: hidden; transition: height 1s ease-out;
+    }
+    header nav ul li{
+        display: block; text-align: center;
+    }
+    header nav ul li.mobileUI label{
+        display: block; width: 30px; margin: 0 auto;
+    }
+    header nav ul li.mobileUI label span{
+        width: 30px; height: 3px; border-top: 3px solid #635f59; display: block;
+        transition: border-top .5s ease-out;
+    } 
+    header nav ul li.mobileUI label:hover span{
+        border-top: 3px solid #ff00de;
+    }
+
+
+    /* 240110 */
+    header nav ul li a{
+        text-decoration: none; text-transform: uppercase; display: inline-block;
+        font-size: 14px; color: #635f54; padding: 20px; border: 5px solid white;
+        transition-property: background-color, border;
+        transition-duration: 1s, 0.5s;
+        transition-delay: 0.2s, 0.1s;
+    }
+    /* inline-block을 하면서 마진을 따로 구하지 않고도 너비 자동설정 할 수 있음 */
+    header nav ul li:hover a{
+        background-color: #0cf; border-color: #0cf; color: white;
+        border-radius: 10px 0;
+    }
+    .container{
+        padding-top: 40px;
+    }
+}
+/* mobile */
+
+
+@media screen and (min-width: 768px){
+    header{
+        background-color: white; position: fixed; width: 100%;
+    }
+    header nav{
+        padding: 10px 0;
+    }
+    header nav ul li{
+        width: 19%; display: inline-block; text-align: center;
+    }
+    header nav #MUI_on,
+    header nav ul li.mobileUI{
+        display: none;
+    }
+    /* 240110 */
+    header nav ul li a{
+        text-decoration: none; text-transform: uppercase; display: inline-block;
+        font-size: 14px; color: #635f54; padding: 20px; border: 5px solid white;
+        transition-property: background-color, border;
+        transition-duration: 1s, 0.5s;
+        transition-delay: 0.2s, 0.1s;
+    }
+    /* inline-block을 하면서 마진을 따로 구하지 않고도 너비 자동설정 할 수 있음 */
+    header nav ul li:hover a{
+        background-color: #0cf; border-color: #0cf; color: white;
+        border-radius: 10px 0;
+    }
+    .container{
+        padding-top: 85px;
+    }
+}
+/* 
+tablet & desktop -> 768px일 때 
+디스플레이 환경이 바뀔 때 마다 민위스는 맨날 바뀜 
+*/
+
+

@@ -1,0 +1,933 @@
+
+
+@media screen and (max-width:767px){
+    #about{
+        text-align: center;
+    }
+    #about img{
+        width: 50%; max-width: 235px;
+        /* 맥스위스는 건들지않기 테브릿의 해상도가 너무 커져서  */
+    }
+    #about figcaption > *:not(a){
+        margin-bottom: 20px;
+        /* 글자와 글자가 만나니까 -5 */
+    }
+    #about figcaption h2{
+        font-size: 22px; font-weight: 700;
+        color: #413d4b;
+    }
+    #about figcaption p{
+        font-size: 14px; font-weight: 300;
+        color: rgba(65, 61, 75, 0.75);
+        line-height: 22px;
+    }
+    #about figcaption a.btn_more{
+        max-width: 120px; margin: 0 auto;
+    }
+    /* CI figure Fin */
+
+    section.videoArea{
+        background: url('../images/bg_02.png.png') left top / cover no-repeat;
+        /* tempcode? */
+        padding: 200px 0;
+    }
+    section.videoArea a{
+        display: block; font-size: 45px; color: white;
+        width: 100px; padding: 23px 0 26px 5px;
+        margin: 0 auto 30px;
+        border: 3px solid white;
+        border-radius: 50px; text-align: center;
+        box-sizing: border-box;
+        /* 박스사이징은 좌우만 들어감 치수 정확하게 하려면 와이드랑 하이트를 건드려야됨*/
+    }
+    section.videoArea h2{
+        font-size: 16px; color: white;
+        font-weight: 900; text-align: center;
+    }
+    /* videoArea Fin */
+
+    /* 
+    1. 화면상에서의 min-height를 지정하는 방법 
+    2. h3의 폰트사이즈를 조정하는 방법
+    3. 유동성 단위로 하는 방법..?-> ~vw(단위) / 한곳에다가만 쓰지 못하고 한 번 쓰면 다 바껴야 돼
+    */
+    section.expArea{
+        text-align: center;
+    }
+    section.expArea h2{
+        font-size: 22px; color: #413d4b; font-weight: 700;
+        margin-bottom: 10px;
+    }
+    section.expArea > p{
+        font-size: 14px; color: rgba(47, 45, 53,0.75); font-weight: 400;
+        margin-bottom: 15px;
+    }
+    section.expArea hr{
+        width: 50px; height: 2px; margin: 0 auto 50px;
+    }
+    section.expArea ul li{
+        display: block; box-sizing: border-box;
+        /* padding 써야해서 박스사이징은 남겨둠 */
+        padding: 120px 2.5% 40px;
+        /* 부모기준으로 %잡기  */
+        background-position: center 30px;
+        background-repeat: no-repeat;
+        min-height: 296px;
+        /* f12 했을 때 한 공간의 크기가 296이 나옴 */
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    section.expArea ul li:nth-child(1){
+        background-image: url('../images/ico_01.png.png');
+    }
+    section.expArea ul li:nth-child(2){
+        background-image: url('../images/ico_02.png.png');
+    }
+    section.expArea ul li:nth-child(3){
+        background-image: url('../images/ico_03.png.png');
+    }
+    section.expArea ul li:nth-child(4){
+        background-image: url('../images/ico_04.png.png');
+    }
+    section.expArea ul li:nth-child(5){
+        background-image: url('../images/ico_05.png.png');
+    }
+    section.expArea ul li:nth-child(6){
+        background-image: url('../images/ico_06.png.png');
+    }
+    section.expArea ul li h3{
+        font-size: 12px; font-weight: 900; color: #413d4b;
+        margin-bottom: 20px;
+    }
+    section.expArea ul li p{
+        font-size: 12px; font-weight: 300; color: rgba(51, 51, 51, 0.75);
+        line-height: 22px;
+    }
+    /* 한글기준으로  font-size 12px이 마지노선! 더 작게는 안돼*/
+    /* ? expArea Fin */
+
+    section.teamArea{
+        background: url('../images/bg_3.png.png') left top / cover no-repeat;
+        text-align: center; padding: 70px 3%; color: white;
+        /* 여기 padding은 팀섹션이 글로벌에 들어갈 수 없어서 */
+    }
+    section.teamArea h2{
+        font-size: 22px; font-weight: 700; margin-bottom: 10px;
+    } 
+    section.teamArea p{
+        font-size: 14px;
+    }
+    section.teamArea p:first-of-type{
+        font-weight: 400; margin-bottom: 15px;
+    }
+    section.teamArea > hr{
+        border-color: rgba(255, 255, 255, 0.2);
+        max-width: 50px;
+    }
+    /* section.teamArea ul 글로벌로 잡아주기 */
+    section.teamArea ul li{
+        display: block;
+        /* 불릿을 없애기 위한 블럭이 되겠지 */
+        /* 원래 float하면 디스플레이 블럭이 자동으로 들어감
+        근데 float 때 불록이 되는 브라우저가 있고 안되는 블러우저가 있음 그래서 혹시 몰라서
+        디스플레이 블럭을 주는게 마음편함 (크롬일 때는 블럭 따로 안 줘도 됨) */
+    }
+    section.teamArea ul li:not(:last-child){
+        margin-bottom: 20px;
+    }
+    section.teamArea ul li figure{
+        background: url('https://via.placeholder.com/220x230') center top / contain no-repeat;
+        padding-top: 180px;
+    }
+    section.teamArea ul li figure figcaption{
+        border: 1px solid rgba(255,255,255,0.5); padding: 20px 0;
+    }
+    section.teamArea ul li figure figcaption dl dt{
+        font-size: 14px; font-weight: 900; margin-bottom: 10px;
+    }
+    section.teamArea ul li figure figcaption dl dd{
+        font-size: 13px; font-weight: 300; color: rgba(250,250,250,0.7);
+    }
+    section.teamArea ul + p{
+        margin-bottom: 25px; font-weight: 300; line-height: 18px;
+    }
+    section.teamArea a.btn_more{
+        max-width: 140px; margin: 0 auto;
+    }
+    /* ?teamArea Fin */
+
+    section.worksArea{
+        padding: 70px 0;
+    }
+    section.worksArea h2{
+        font-size: 18px; font-weight: 700; color: #413d4b;
+        position: relative;
+    }
+    section.worksArea h2 a{
+        position: absolute; right: 3%; font-size: 12px;
+        /* 최소 폰트사이즈 12px */
+        font-weight: 300; color: inherit;
+        /* inherit 부모가 속성값이 있으면 내려받는 거 */
+        /* right가 0 이면 글로벌에서 padding값 잡아둔게 받지 못함 */
+        /* top좌표가 없어지면 다시 되돌아옴 */
+        /* float: right; display: block; line-height:22px -> 화면이 줄어들면 무조건 떨어짐, 포지션으로 할 것! */        
+    }
+    section.worksArea ul{
+        list-style: none; margin-bottom: 70px;
+    }
+    section.worksArea ul li a{
+        display: block;
+    }
+    section.worksArea ul li a img{
+        width: 100%; display: block;
+    }
+    section.worksArea a.btn_more{
+        max-width: 140px; margin: 0 auto;
+    }
+    /* ? worksArea Fin */
+
+    section.talkArea{
+        background: url('../images/bg_4.png.png') left top / cover no-repeat;
+        padding: 70px 3%; text-align: center;
+    }
+    section.talkArea h2{
+        display: none;
+    }
+    section.talkArea p{
+        max-width: 600px; margin: 0 auto 45px; color: white;
+        font-size: 16px; line-height: 26px; font-weight: 400;
+        padding-top: 70px; background: url('../images/quote.png.png') no-repeat center top;
+    }
+    /* 라인하이트때문에 span/strong이 같이 라인하이트 받음 그래서 마진넣으면 더 들어감 */
+    section.talkArea p>*{
+        display: block;
+    }
+    section.talkArea p strong{
+        margin: 40px 0 5px; font-size: 14px;
+        font-weight: 900; line-height: 14px;
+    }
+    section.talkArea p span{
+        font-size: 13px; font-weight: 300; color: rgba(255, 255, 255, 0.7);
+    }
+    section.talkArea div{
+        max-width: 600px; margin: 0 auto;
+    }
+    section.talkArea div>*{
+        display: inline-block; vertical-align: middle;
+    }
+    section.talkArea div>a{
+        font-size: 22px; color: rgba(255, 255, 255, 0.5);
+    }
+    section.talkArea div ul{
+        max-width: 305px; width: 80%;
+        /* 3분할함 그래서 33%걸고 맥스로는 이미지들이 튀어나가지않게 잡음 */
+    }
+    section.talkArea div ul:after{
+        content: ''; display: block; clear: both;
+    }
+    section.talkArea div ul li{
+        float: left; display: block; width: 19%;
+    }
+    section.talkArea div ul li:not(:first-child){
+        margin-left: 1.25%;
+    }
+    section.talkArea div ul li a{
+        display: block; text-align: center;
+    }
+    section.talkArea div ul li:not(.active) a{
+        padding: 15px 0; transition: padding 0.35s ease-in-out;
+    }
+    section.talkArea div ul li:not(.active) a img{
+        width: 65%; transition: width 0.35s ease-in-out;
+    }
+    section.talkArea div ul li.active a{
+        padding: 0;
+    }
+    section.talkArea div ul li.active a img{
+        width: 100%;
+    }
+    /* tabel/mobile은 hover 사용을 못해서 남아있게 되면 터치로 적용돼서
+    원치않는 이벤트가 일어남 */
+    /* talkArea Fin */
+
+    section.contactArea h2{
+        display: none;
+    }
+    section.contactArea form fieldset legend,
+    section.contactArea div h3{
+        font-size: 22px; font-weight: 700; color: #413d4b;
+        margin-bottom: 35px;
+    }
+    section.contactArea form fieldset{
+        margin-bottom: 50px;
+    }
+    section.contactArea form fieldset> *:not([type='submit'],legend){
+        border: 1px solid rgba(0, 0, 0, 0.1); 
+        padding: 14px 20px; font-size: 14px; font-weight: 300; 
+        display: block;
+        width: 100%; box-sizing: border-box; margin-bottom: 20px;
+    }
+    section.contactArea form fieldset>*:not([type='submit'],legend)::placeholder{
+        color: rgba(65, 61, 75, 0.5);
+    }
+    section.contactArea form fieldset textarea{
+        height: 200px; resize: none;
+    }
+    section.contactArea form fieldset .btn_more{
+        background-color: transparent; min-width: 120px;
+    }
+    section.contactArea div{
+        margin-left: 3%;
+    }
+    section.contactArea div ul:after{
+        content: ''; display: block; clear: both;
+    }
+    section.contactArea div ul li{
+        width: 50%; float: left; display: block;
+    }
+    section.contactArea div ul li a{
+        display: block; text-align: center;
+    }
+    section.contactArea div ul li img{
+        width: 100%; max-width: 162px;
+    }
+}
+/* mibile */
+
+@media screen and (min-width:768px) and (max-width:1279px){
+    #about{
+        padding-left: 3.5%;
+        /* 글로벌에서 패딩을 써서 지금 이 패딩을
+        숏핸드로 쓴다면 글로벌 패딩이 안 먹힘 */
+    }
+    #about::after{
+        content: ''; display: block; clear: both;
+    }
+    #about img{
+        float: left; 
+        width: 32%; max-width: 235px;
+        /* 맥스위스는 건들지않기 테브릿의 해상도가 너무 커져서  */
+    }
+    #about figcaption{
+        float: left; margin-left: 8%;
+        width: 60%;
+    }
+    /* 100% 맞춤 */
+    #about figcaption > *:not(a){
+        margin-bottom: 20px;
+        /* 글자와 글자가 만나니까 -5 */
+    }
+    #about figcaption h2{
+        font-size: 22px; font-weight: 700;
+        color: #413d4b;
+    }
+    #about figcaption p{
+        font-size: 14px; font-weight: 300;
+        color: rgba(65, 61, 75, 0.75);
+        line-height: 22px;
+    }
+    #about figcaption a.btn_more{
+        max-width: 120px;
+    }
+    /* CI figure Fin */
+
+    section.videoArea{
+        background: url('../images/bg_02.png.png') left top / cover no-repeat;
+        /* tempecode? */
+        padding: 200px 0;
+    }
+    section.videoArea a{
+        display: block; font-size: 45px; color: white;
+        width: 100px; padding: 23px 0 26px 5px;
+        margin: 0 auto 30px;
+        border: 3px solid white;
+        border-radius: 50px; text-align: center;
+        box-sizing: border-box;
+        /* 박스사이징은 좌우만 들어감 치수 정확하게 하려면 와이드랑 하이트를 건드려야됨*/
+    }
+    section.videoArea h2{
+        font-size: 16px; color: white;
+        font-weight: 900; text-align: center;
+    }
+    /* videoArea Fin */
+
+    /* 
+    1. 화면상에서의 min-height를 지정하는 방법 
+    2. h3의 폰트사이즈를 조정하는 방법
+    3. 유동성 단위로 하는 방법..?-> ~vw / 한곳에다가만 쓰지 못하고 한 번 쓰면 다 바껴야 돼
+    */
+    section.expArea{
+        text-align: center;
+    }
+    section.expArea h2{
+        font-size: 22px; color: #413d4b; font-weight: 700;
+        margin-bottom: 10px;
+    }
+    section.expArea > p{
+        font-size: 14px; color: rgba(47, 45, 53,0.75); font-weight: 400;
+        margin-bottom: 15px;
+    }
+    section.expArea hr{
+        width: 50px; height: 2px; margin: 0 auto 50px;
+    }
+    section.expArea ul:after{
+        content: ''; display: block; clear: both;
+    }
+    section.expArea ul li{
+        display: block; float: left;
+        width: 33.33%; box-sizing: border-box;
+        padding: 120px 3.5% 40px;
+        /* 부모기준으로 %잡기  */
+        background-position: center 30px;
+        background-repeat: no-repeat;
+        min-height: 296px;
+        /* f12 했을 때 한 공간의 크기가 296이 나옴 */
+    }
+    section.expArea ul li:not(:nth-child(n):nth-child(-n+3)){
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    /* n은 계속 증가하는 수 */
+    section.expArea ul li:not(:nth-child(3n)){
+        border-right: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    section.expArea ul li:nth-child(1){
+        background-image: url('../images/ico_01.png.png');
+    }
+    section.expArea ul li:nth-child(2){
+        background-image: url('../images/ico_02.png.png');
+    }
+    section.expArea ul li:nth-child(3){
+        background-image: url('../images/ico_03.png.png');
+    }
+    section.expArea ul li:nth-child(4){
+        background-image: url('../images/ico_04.png.png');
+    }
+    section.expArea ul li:nth-child(5){
+        background-image: url('../images/ico_05.png.png');
+    }
+    section.expArea ul li:nth-child(6){
+        background-image: url('../images/ico_06.png.png');
+    }
+    section.expArea ul li h3{
+        font-size: 12px; font-weight: 900; color: #413d4b;
+        margin-bottom: 20px;
+    }
+    section.expArea ul li p{
+        font-size: 12px; font-weight: 300; color: rgba(51, 51, 51, 0.75);
+        line-height: 22px;
+    }
+    /* 한글기준으로  font-size 12px이 마지노선! 더 작게는 안돼*/
+    /* ? expArea Fin */
+
+    section.teamArea{
+        background: url('../images/bg_3.png.png') left top / cover no-repeat;
+        text-align: center; padding: 70px 0; color: white;
+        /* 여기 padding은 팀섹션이 글로벌에 들어갈 수 없어서 */
+    }
+    section.teamArea h2{
+        font-size: 22px; font-weight: 700; margin-bottom: 10px;
+    } 
+    section.teamArea p{
+        font-size: 14px;
+    }
+    section.teamArea p:first-of-type{
+        font-weight: 400; margin-bottom: 15px;
+    }
+    section.teamArea > hr{
+        border-color: rgba(255, 255, 255, 0.2);
+        max-width: 50px;
+    }
+    section.teamArea ul{
+        max-width: 728px; margin: 0 auto 70px;
+    }
+    section.teamArea ul:after{
+        content: ''; display: block; clear: both;
+    }
+    section.teamArea ul li{
+        float: left; width: 23.5%; display: block;
+    }
+    section.teamArea ul li:not(:first-child){
+        margin-left: 2%;
+    }
+    section.teamArea ul li figure{
+        background: url('https://via.placeholder.com/220x230') center top / contain no-repeat;
+        padding-top: 180px;
+    }
+    section.teamArea ul li figure figcaption{
+        border: 1px solid rgba(255,255,255,0.5); padding: 20px 0;
+    }
+    section.teamArea ul li figure figcaption dl dt{
+        font-size: 14px; font-weight: 900; margin-bottom: 10px;
+    }
+    section.teamArea ul li figure figcaption dl dd{
+        font-size: 13px; font-weight: 300; color: rgba(250,250,250,0.7);
+    }
+    section.teamArea ul + p{
+        margin-bottom: 25px; font-weight: 300;
+    }
+    section.teamArea a.btn_more{
+        max-width: 140px; margin: 0 auto;
+    }
+    /* ?teamArea Fin */
+
+    section.worksArea{
+        padding: 70px 0;
+    }
+    section.worksArea h2{
+        font-size: 22px; font-weight: 700; color: #413d4b;
+        max-width: 728px; margin: 0 auto 70px;
+        position: relative;
+    }
+    section.worksArea h2 a{
+        position: absolute; right: 0; top: 8px; font-size: 14px;
+        font-weight: 300; color: inherit;
+        /* inherit 부모가 속성값이 있으면 내려받는 거 */
+        /* float: right; display: block; line-height:22px -> 화면이 줄어들면 무조건 떨어짐, 포지션으로 할 것! */        
+    }
+    section.worksArea ul{
+        list-style: none; margin-bottom: 70px;
+    }
+    section.worksArea ul:after{
+        content: ''; display: block; clear: both;
+    }
+    section.worksArea ul li{
+        width: 16.66%; float: left;
+    }
+    section.worksArea ul li a{
+        display: block;
+    }
+    section.worksArea ul li a img{
+        width: 100%; display: block;
+    }
+    section.worksArea a.btn_more{
+        max-width: 140px; margin: 0 auto;
+    }
+    /* ? worksArea Fin */
+
+    section.talkArea{
+        background: url('../images/bg_4.png.png') left top / cover no-repeat;
+        padding: 70px 0; text-align: center;
+    }
+    section.talkArea h2{
+        display: none;
+    }
+    section.talkArea p{
+        max-width: 728px; margin: 0 auto 45px; color: white;
+        font-size: 16px; line-height: 26px; font-weight: 400;
+        padding-top: 70px; background: url('../images/quote.png.png') no-repeat center top;
+    }
+    /* 라인하이트때문에 span/strong이 같이 라인하이트 받음 그래서 마진넣으면 더 들어감 */
+    section.talkArea p>*{
+        display: block;
+    }
+    section.talkArea p strong{
+        margin: 40px 0 5px; font-size: 14px;
+        font-weight: 900; line-height: 14px;
+    }
+    section.talkArea p span{
+        font-size: 13px; font-weight: 300; color: rgba(255, 255, 255, 0.7);
+    }
+    section.talkArea div{
+        max-width: 728px; margin: 0 auto;
+    }
+    section.talkArea div>*{
+        display: inline-block; vertical-align: middle;
+    }
+    section.talkArea div>a{
+        font-size: 22px; color: rgba(255, 255, 255, 0.5);
+    }
+    section.talkArea div ul{
+        max-width: 305px; width: 43%;
+        /* 3분할함 그래서 33%걸고 맥스로는 이미지들이 튀어나가지않게 잡음 */
+    }
+    section.talkArea div ul:after{
+        content: ''; display: block; clear: both;
+    }
+    section.talkArea div ul li{
+        float: left; display: block; width: 19%;
+    }
+    section.talkArea div ul li:not(:first-child){
+        margin-left: 1.25%;
+    }
+    section.talkArea div ul li a{
+        display: block; text-align: center;
+    }
+    section.talkArea div ul li:not(.active) a{
+        padding: 15px 0; transition: padding 0.35s ease-in-out;
+    }
+    section.talkArea div ul li.active a,
+    section.talkArea div ul li:not(.active) a{
+        padding: 0;
+    }
+    section.talkArea div ul li:not(.active) a img{
+        width: 65%; transition: width 0.35s ease-in-out;
+    }
+    section.talkArea div ul li.active a img,
+    section.talkArea div ul li:not(.active) a img{
+        width: 100%;
+    }
+    /* tabel/mobile은 hover 사용을 못해서 남아있게 되면 터치로 적용돼서
+    원치않는 이벤트가 일어남 */
+    /* talkArea Fin */
+
+    section.contactArea:after{
+        content: ''; display: block; clear: both;
+    }
+    section.contactArea h2{
+        display: none;
+    }
+    section.contactArea form fieldset,
+    section.contactArea div{
+        float: left;
+    }
+    section.contactArea form fieldset legend,
+    section.contactArea div h3{
+        font-size: 22px; font-weight: 700; color: #413d4b;
+        margin-bottom: 35px;
+    }
+    section.contactArea form fieldset{
+        width: 50%;
+    }
+    section.contactArea form fieldset> *:not([type='submit'],legend){
+        border: 1px solid rgba(0, 0, 0, 0.1); 
+        padding: 14px 20px; font-size: 14px; font-weight: 300; 
+        display: block;
+        width: 100%; box-sizing: border-box; margin-bottom: 20px;
+    }
+    section.contactArea form fieldset>*:not([type='submit'],legend)::placeholder{
+        color: rgba(65, 61, 75, 0.5);
+    }
+    section.contactArea form fieldset textarea{
+        height: 200px; resize: none;
+    }
+    section.contactArea form fieldset .btn_more{
+        background-color: transparent; min-width: 120px;
+    }
+    section.contactArea div{
+        width: 40%; margin-left: 10%;
+    }
+    section.contactArea div ul:after{
+        content: ''; display: block; clear: both;
+    }
+    section.contactArea div ul li{
+        width: 50%; float: left; display: block;
+    }
+    section.contactArea div ul li a{
+        display: block; text-align: center;
+    }
+    section.contactArea div ul li img{
+        width: 100%; max-width: 162px;
+    }
+}
+/* tablet */
+
+@media screen and (min-width:1280px){
+    #about{
+        padding-left: 6.8%;
+        /* 글로벌에서 패딩을 써서 지금 이 패딩을
+        숏핸드로 쓴다면 글로벌 패딩이 안 먹힘 */
+    }
+    #about::after{
+        content: ''; display: block; clear: both;
+    }
+    #about img{
+        float: left; 
+        width: 25%; max-width: 235px;
+    }
+    #about figcaption{
+        float: left; margin-left: 10%;
+        width: 65%;
+    }
+    #about figcaption > *:not(a){
+        margin-bottom: 20px;
+        /* 글자와 글자가 만나니까 -5 */
+    }
+    #about figcaption h2{
+        font-size: 22px; font-weight: 700;
+        color: #413d4b;
+    }
+    #about figcaption p{
+        font-size: 14px; font-weight: 300;
+        color: rgba(65, 61, 75, 0.75);
+        line-height: 22px;
+    }
+    #about figcaption a.btn_more{
+        max-width: 120px;
+    }
+    /* CI figure Fin */
+    section.videoArea{
+        background: url('../images/bg_02.png.png') left top / cover no-repeat;
+        padding: 200px 0;
+    }
+    section.videoArea a{
+        display: block; font-size: 45px; color: white;
+        width: 100px; padding: 23px 0 26px 5px;
+        margin: 0 auto 30px;
+        border: 3px solid white;
+        border-radius: 50px; text-align: center;
+        box-sizing: border-box;
+        /* 박스사이징은 좌우만 들어감 치수 정확하게 하려면 와이드랑 하이트를 건드려야됨*/
+    }
+    section.videoArea h2{
+        font-size: 16px; color: white;
+        font-weight: 900; text-align: center;
+    }
+    /* videoArea Fin */
+
+    section.expArea{
+        text-align: center;
+    }
+    section.expArea h2{
+        font-size: 22px; color: #413d4b; font-weight: 700;
+        margin-bottom: 10px;
+    }
+    section.expArea > p{
+        font-size: 14px; color: rgba(47, 45, 53,0.75); font-weight: 400;
+        margin-bottom: 15px;
+    }
+    section.expArea hr{
+        width: 50px; height: 2px; margin: 0 auto 50px;
+    }
+    section.expArea ul:after{
+        content: ''; display: block; clear: both;
+    }
+    section.expArea ul li{
+        display: block; float: left;
+        width: 33.33%; box-sizing: border-box;
+        padding: 120px 3.5% 40px;
+        /* 부모기준으로 %잡기  */
+        background-position: center 30px;
+        background-repeat: no-repeat;
+    }
+    section.expArea ul li:not(:nth-child(n):nth-child(-n+3)){
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    /* n은 계속 증가하는 수 */
+    section.expArea ul li:not(:nth-child(3n)){
+        border-right: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    section.expArea ul li:nth-child(1){
+        background-image: url('../images/ico_01.png.png');
+    }
+    section.expArea ul li:nth-child(2){
+        background-image: url('../images/ico_02.png.png');
+    }
+    section.expArea ul li:nth-child(3){
+        background-image: url('../images/ico_03.png.png');
+    }
+    section.expArea ul li:nth-child(4){
+        background-image: url('../images/ico_04.png.png');
+    }
+    section.expArea ul li:nth-child(5){
+        background-image: url('../images/ico_05.png.png');
+    }
+    section.expArea ul li:nth-child(6){
+        background-image: url('../images/ico_06.png.png');
+    }
+    section.expArea ul li h3{
+        font-size: 14px; font-weight: 900; color: #413d4b;
+        margin-bottom: 20px;
+    }
+    section.expArea ul li p{
+        font-size: 14px; font-weight: 300; color: rgba(51, 51, 51, 0.75);
+        line-height: 22px;
+    }
+    /* ? expArea Fin */
+    section.teamArea{
+        background: url('../images/bg_3.png.png') left top / cover no-repeat;
+        text-align: center; padding: 70px 0; color: white;
+        /* 여기 padding은 팀섹션이 글로벌에 들어갈 수 없어서 */
+    }
+    section.teamArea h2{
+        font-size: 22px; font-weight: 700; margin-bottom: 10px;
+    } 
+    section.teamArea p{
+        font-size: 14px;
+    }
+    section.teamArea p:first-of-type{
+        font-weight: 400; margin-bottom: 15px;
+    }
+    section.teamArea > hr{
+        border-color: rgba(255, 255, 255, 0.2);
+        max-width: 50px;
+    }
+    section.teamArea ul{
+        max-width: 940px; margin: 0 auto 70px;
+    }
+    section.teamArea ul:after{
+        content: ''; display: block; clear: both;
+    }
+    section.teamArea ul li{
+        float: left; width: 23.5%; display: block;
+    }
+    section.teamArea ul li:not(:first-child){
+        margin-left: 2%;
+    }
+    section.teamArea ul li figure{
+        background: url('https://via.placeholder.com/220x230') center top / contain no-repeat;
+        padding-top: 230px;
+    }
+    section.teamArea ul li figure figcaption{
+        border: 1px solid rgba(255,255,255,0.5); padding: 20px 0;
+    }
+    section.teamArea ul li figure figcaption dl dt{
+        font-size: 14px; font-weight: 900; margin-bottom: 10px;
+    }
+    section.teamArea ul li figure figcaption dl dd{
+        font-size: 13px; font-weight: 300; color: rgba(250,250,250,0.7);
+    }
+    section.teamArea ul + p{
+        margin-bottom: 25px; font-weight: 300;
+    }
+    section.teamArea a.btn_more{
+        max-width: 140px; margin: 0 auto;
+    }
+    /* ?teamArea Fin */
+    section.worksArea{
+        padding: 70px 0;
+    }
+    section.worksArea h2{
+        font-size: 22px; font-weight: 700; color: #413d4b;
+        max-width: 940px; margin: 0 auto 70px;
+        position: relative;
+    }
+    section.worksArea h2 a{
+        position: absolute; right: 0; top: 8px; font-size: 14px;
+        font-weight: 300; color: inherit;
+        /* inherit 부모가 속성값이 있으면 내려받는 거 */
+        /* float: right; display: block; line-height:22px -> 화면이 줄어들면 무조건 떨어짐, 포지션으로 할 것! */        
+    }
+    section.worksArea ul{
+        list-style: none; margin-bottom: 70px;
+    }
+    section.worksArea ul:after{
+        content: ''; display: block; clear: both;
+    }
+    section.worksArea ul li{
+        width: 16.66%; float: left;
+    }
+    section.worksArea ul li a{
+        display: block;
+    }
+    section.worksArea ul li a img{
+        width: 100%; display: block;
+    }
+    section.worksArea a.btn_more{
+        max-width: 140px; margin: 0 auto;
+    }
+    /* ? worksArea Fin */
+
+    section.talkArea{
+        background: url('../images/bg_4.png.png') left top / cover no-repeat;
+        padding: 70px 0; text-align: center;
+    }
+    section.talkArea h2{
+        display: none;
+    }
+    section.talkArea p{
+        max-width: 770px; margin: 0 auto 45px; color: white;
+        font-size: 16px; line-height: 26px; font-weight: 400;
+        padding-top: 70px; background: url('../images/quote.png.png') no-repeat center top;
+    }
+    /* 라인하이트때문에 span/strong이 같이 라인하이트 받음 그래서 마진넣으면 더 들어감 */
+    section.talkArea p>*{
+        display: block;
+    }
+    section.talkArea p strong{
+        margin: 40px 0 5px; font-size: 14px;
+        font-weight: 900; line-height: 14px;
+    }
+    section.talkArea p span{
+        font-size: 13px; font-weight: 300; color: rgba(255, 255, 255, 0.7);
+    }
+    section.talkArea div{
+        max-width: 940px; margin: 0 auto;
+    }
+    section.talkArea div>*{
+        display: inline-block; vertical-align: middle;
+    }
+    section.talkArea div>a{
+        font-size: 22px; color: rgba(255, 255, 255, 0.5);
+    }
+    section.talkArea div ul{
+        max-width: 305px; width: 33%;
+        /* 3분할함 그래서 33%걸고 맥스로는 이미지들이 튀어나가지않게 잡음 */
+    }
+    section.talkArea div ul:after{
+        content: ''; display: block; clear: both;
+    }
+    section.talkArea div ul li{
+        float: left; display: block; width: 19%;
+    }
+    section.talkArea div ul li:not(:first-child){
+        margin-left: 1.25%;
+    }
+    section.talkArea div ul li a{
+        display: block; text-align: center;
+    }
+    section.talkArea div ul li:not(.active) a{
+        padding: 15px 0; transition: padding 0.35s ease-in-out;
+    }
+    section.talkArea div ul li.active a,
+    section.talkArea div ul li:not(.active):hover a{
+        padding: 0;
+    }
+    section.talkArea div ul li:not(.active) a img{
+        width: 65%; transition: width 0.35s ease-in-out;
+    }
+    section.talkArea div ul li.active a img,
+    section.talkArea div ul li:not(.active):hover a img{
+        width: 100%;
+    }
+    /* talkArea Fin */
+
+    section.contactArea:after{
+        content: ''; display: block; clear: both;
+    }
+    section.contactArea h2{
+        display: none;
+    }
+    section.contactArea form fieldset legend,
+    section.contactArea div h3{
+        font-size: 22px; font-weight: 700; color: #413d4b;
+        margin-bottom: 35px;
+    }
+    section.contactArea form fieldset,
+    section.contactArea div{
+        float: left;
+    }
+    section.contactArea form fieldset{
+        width: 50%;
+    }
+    section.contactArea form fieldset> *:not([type='submit'],legend){
+        border: 1px solid rgba(0, 0, 0, 0.1); 
+        padding: 14px 20px; font-size: 14px; font-weight: 300; display: block;
+        width: 100%; box-sizing: border-box; margin-bottom: 20px;
+    }
+    section.contactArea form fieldset>*:not([type='submit'],legend)::placeholder{
+        color: rgba(65, 61, 75, 0.5);
+    }
+    section.contactArea form fieldset textarea{
+        height: 200px; resize: none;
+    }
+    section.contactArea form fieldset .btn_more{
+        background-color: transparent; min-width: 120px;
+    }
+    section.contactArea div{
+        width: 40%; margin-left: 10%;
+    }
+    section.contactArea div ul:after{
+        content: ''; display: block; clear: both;
+    }
+    section.contactArea div ul li{
+        width: 50%; float: left; display: block;
+    }
+    section.contactArea div ul li a{
+        display: block; text-align: center;
+    }
+    section.contactArea div ul li img{
+        width: 100%; max-width: 162px;
+    }
+    /* desktop fin */
+
+}
+/* desktop */
